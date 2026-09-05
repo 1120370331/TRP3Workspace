@@ -22,6 +22,7 @@ references/      Total RP 3 与 Extended 上游源码子模块
 - `apps/rprecorder/RPRecorder.lua`：记录和回放游戏内聊天信息的完整示例，含菜单、事件监听、持久化和播放逻辑。
 - `docs/API.docx`：现有 Octopus API 文档。
 - `references/total-rp-3` 与 `references/total-rp-3-extended`：上游插件源码的固定 Git 子模块，用于追踪宿主实现而不复制其历史。
+- `references/decoded/abyss-aquarium/`：从 TRP3 Extended 短导出反解析的只读参考项目；保留原始导出和可读 JSON。
 - `docs/research/rpbox/`：来自 RPBox 提交 `8485f74be09f038218b54717101c6ab9beb81004` 的研究快照。
 
 `RPRecorder.lua` 是可直接放入 TRP3 的独立脚本，内部包含一份 Octopus 实现（版本 1.2.0）；它并不从 `framework/octopus/Octopus.lua` 导入。后者目前保留为独立框架版本（1.1.5）。在未专门完成版本统一前，请不要将两者视为可自动替换的依赖关系。

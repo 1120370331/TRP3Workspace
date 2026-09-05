@@ -28,6 +28,7 @@ Upstream source is held separately in `references/` as Git submodules. RPBox-der
 | `items/` | One directory per future standalone prop | Reserved |
 | `docs/` | Human-facing API and architecture reference | `API.docx`, this file |
 | `references/` | Pinned upstream source for implementation tracing | Total RP 3 and Extended submodules |
+| `references/decoded/` | Read-only decoded TRP3 Extended export snapshots | Abyss Aquarium reference project |
 | `docs/research/rpbox/` | Preserved RPBox analysis and source snapshots | RPBox commit `8485f74be09f038218b54717101c6ab9beb81004` |
 
 ## Runtime contracts
