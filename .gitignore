@@ -1,0 +1,13 @@
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Microsoft Office temporary files
+~$*.docx
+
+# Local document-review output
+_docx_review/
