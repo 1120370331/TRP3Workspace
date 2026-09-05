@@ -1,0 +1,6 @@
+[submodule "total-rp-3"]
+	path = references/total-rp-3
+	url = git@github.com:Total-RP/Total-RP-3.git
+[submodule "total-rp-3-extended"]
+	path = references/total-rp-3-extended
+	url = git@github.com:Total-RP/Total-RP-3-Extended.git
