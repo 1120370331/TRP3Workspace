@@ -1,0 +1,95 @@
+{
+  "simulationHz": 30,
+  "presentation": "game",
+  "viewport": { "width": 960, "height": 600 },
+  "limits": { "maxEntities": 256 },
+  "controls": {}, "prefabs": {}, "actions": {},
+  "levels": { "lawn_day": {"terrain": []}, "lawn_night": {"terrain": []} },
+  "assets": {"models": {}},
+  "sounds": {
+    "plant": {"kind":"soundKitID","id":44308,"cooldown":0.15,"maxDuration":2},
+    "sun": {"kind":"soundKitID","id":688,"cooldown":0.15,"maxDuration":2},
+    "hit": {"kind":"soundKitID","id":97598,"cooldown":0.25,"maxDuration":1},
+    "explode": {"kind":"soundKitID","id":97597,"cooldown":0.5,"maxDuration":2},
+    "wave": {"kind":"soundKitID","id":12867,"cooldown":2,"maxDuration":3},
+    "win": {"kind":"soundKitID","id":43502,"cooldown":2,"maxDuration":5},
+    "lose": {"kind":"soundKitID","id":43503,"cooldown":2,"maxDuration":3}
+  },
+  "music": {}, "items": {},
+  "plants": [
+    {"id":"pea","name":"豌豆射手","cost":100,"hp":300,"reload":5,"interval":1.4,"damage":20,"tip":"向前发射豌豆，守住一整条路。"},
+    {"id":"sunflower","name":"向日葵","cost":50,"hp":300,"reload":5,"interval":22,"tip":"每22秒产出25阳光，优先种在后排。"},
+    {"id":"cherry","name":"樱桃炸弹","cost":150,"hp":300,"reload":35,"tip":"1.2秒后爆炸，清除周围3×3区域。"},
+    {"id":"wall","name":"坚果墙","cost":50,"hp":4000,"reload":20,"tip":"4000生命，为后排争取时间。"},
+    {"id":"mine","name":"土豆地雷","cost":25,"hp":300,"reload":20,"tip":"埋下12秒后武装，接触即爆炸。"},
+    {"id":"snow","name":"寒冰射手","cost":175,"hp":300,"reload":5,"interval":1.6,"damage":20,"tip":"冰豌豆让敌人减速50%，持续5秒。"},
+    {"id":"chomper","name":"大嘴花","cost":150,"hp":300,"reload":7.5,"tip":"吞掉前方一格内的敌人，咀嚼20秒。"},
+    {"id":"repeater","name":"双发射手","cost":200,"hp":300,"reload":5,"interval":1.4,"damage":20,"tip":"连续发射两颗豌豆。"},
+    {"id":"puff","name":"小喷菇","cost":0,"hp":300,"reload":5,"interval":1.4,"damage":20,"tip":"免费，射程三格；白天会睡觉。"},
+    {"id":"sunshroom","name":"阳光菇","cost":25,"hp":300,"reload":5,"interval":22,"tip":"夜间产15阳光，90秒长大后产25。"}
+  ],
+  "enemies": {
+    "basic":{"name":"普通僵尸","hp":200,"speed":10,"bite":80},
+    "flag":{"name":"旗帜僵尸","hp":240,"speed":13,"bite":80},
+    "cone":{"name":"路障僵尸","hp":560,"speed":10,"bite":80},
+    "bucket":{"name":"铁桶僵尸","hp":1100,"speed":9,"bite":80},
+    "pole":{"name":"撑杆僵尸","hp":340,"speed":19,"bite":80},
+    "paper":{"name":"读报僵尸","hp":360,"speed":11,"bite":80}
+  },
+  "campaign": [
+    {"title":"第一颗豌豆","subtitle":"阳光落下，庭院苏醒。","rows":[3],"theme":"day","sun":150,"sky":6,"prepare":15,"waves":[
+      {"types":[["basic",2]],"interval":8,"gap":8},
+      {"types":[["basic",3]],"interval":7,"gap":10},
+      {"types":[["flag",1],["basic",3]],"interval":6,"gap":10}]},
+    {"title":"向着阳光","subtitle":"用向日葵经营你的后排。","rows":[2,3,4],"theme":"day","sun":200,"sky":6,"prepare":25,"waves":[
+      {"types":[["basic",4]],"interval":7,"gap":12},
+      {"types":[["basic",6]],"interval":6,"gap":12},
+      {"types":[["flag",1],["basic",7]],"interval":5,"gap":10}]},
+    {"title":"樱桃警报","subtitle":"路障入场；把爆炸留给拥挤处。","rows":[2,3,4],"theme":"day","sun":200,"sky":7,"prepare":26,"waves":[
+      {"types":[["basic",4]],"interval":6,"gap":10},
+      {"types":[["basic",3],["cone",2]],"interval":6,"gap":12},
+      {"types":[["cone",3],["basic",4]],"interval":5,"gap":12},
+      {"types":[["flag",1],["cone",3],["basic",5]],"interval":4,"gap":10}]},
+    {"title":"坚果防线","subtitle":"五条路全部开放。","rows":[1,2,3,4,5],"theme":"day","sun":250,"sky":6,"prepare":32,"waves":[
+      {"types":[["basic",5]],"interval":6,"gap":12},
+      {"types":[["basic",5],["cone",3]],"interval":5,"gap":12},
+      {"types":[["cone",4],["basic",6]],"interval":4,"gap":12},
+      {"types":[["flag",1],["cone",5],["basic",8]],"interval":3.5,"gap":10}]},
+    {"title":"地底惊喜","subtitle":"铁桶登场，提前埋好地雷。","rows":[1,2,3,4,5],"theme":"day","sun":250,"sky":7,"prepare":32,"waves":[
+      {"types":[["basic",5],["cone",2]],"interval":5,"gap":12},
+      {"types":[["cone",4],["bucket",1]],"interval":5,"gap":12},
+      {"types":[["basic",6],["bucket",3]],"interval":4,"gap":12},
+      {"types":[["flag",1],["cone",5],["bucket",4]],"interval":4,"gap":10}]},
+    {"title":"一抹冰蓝","subtitle":"撑杆手会跳过第一株植物。","rows":[1,2,3,4,5],"theme":"day","sun":275,"sky":7,"prepare":35,"waves":[
+      {"types":[["basic",6]],"interval":5,"gap":12},
+      {"types":[["pole",3],["cone",3]],"interval":5,"gap":12},
+      {"types":[["cone",5],["bucket",2]],"interval":4,"gap":12},
+      {"types":[["pole",5],["basic",5]],"interval":4,"gap":12},
+      {"types":[["flag",1],["bucket",4],["pole",5]],"interval":3.5,"gap":10}]},
+    {"title":"午餐时间","subtitle":"大嘴花吞下铁桶也不费力。","rows":[1,2,3,4,5],"theme":"day","sun":275,"sky":7,"prepare":35,"waves":[
+      {"types":[["basic",6],["paper",2]],"interval":5,"gap":12},
+      {"types":[["bucket",3],["cone",3]],"interval":5,"gap":12},
+      {"types":[["paper",5],["pole",3]],"interval":4,"gap":12},
+      {"types":[["bucket",4],["basic",7]],"interval":4,"gap":12},
+      {"types":[["flag",1],["paper",4],["bucket",4],["pole",3]],"interval":3.5,"gap":10}]},
+    {"title":"双倍火力","subtitle":"黄昏前最后一场草坪保卫战。","rows":[1,2,3,4,5],"theme":"day","sun":300,"sky":7,"prepare":35,"waves":[
+      {"types":[["cone",5],["basic",4]],"interval":5,"gap":12},
+      {"types":[["pole",4],["paper",4]],"interval":4,"gap":12},
+      {"types":[["bucket",5],["cone",4]],"interval":4,"gap":12},
+      {"types":[["paper",5],["pole",5],["basic",5]],"interval":3.5,"gap":12},
+      {"types":[["flag",1],["bucket",6],["cone",5],["pole",5]],"interval":3,"gap":10}]},
+    {"title":"蘑菇守夜","subtitle":"没有天降阳光，小喷菇免费守线。","rows":[1,2,3,4,5],"theme":"night","sun":225,"sky":0,"prepare":40,"waves":[
+      {"types":[["basic",5]],"interval":7,"gap":15},
+      {"types":[["basic",5],["cone",3]],"interval":5,"gap":15},
+      {"types":[["paper",4],["basic",6]],"interval":4,"gap":15},
+      {"types":[["pole",4],["bucket",3]],"interval":4,"gap":15},
+      {"types":[["flag",1],["cone",5],["paper",4],["bucket",3]],"interval":3.5,"gap":10}]},
+    {"title":"黎明之前","subtitle":"让阳光菇长大，迎接六波总攻。","rows":[1,2,3,4,5],"theme":"night","sun":250,"sky":0,"prepare":40,"waves":[
+      {"types":[["basic",6]],"interval":6,"gap":15},
+      {"types":[["cone",4],["paper",3]],"interval":5,"gap":15},
+      {"types":[["pole",5],["basic",5]],"interval":4,"gap":15},
+      {"types":[["bucket",5],["paper",4]],"interval":4,"gap":15},
+      {"types":[["cone",6],["pole",5],["paper",4]],"interval":3.5,"gap":15},
+      {"types":[["flag",2],["bucket",7],["pole",5],["paper",5],["cone",5]],"interval":3,"gap":10}]}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "modelKey": "necromancer",
+  "creatureDisplayID": 96088,
+  "modelFileID": 3482565,
+  "modelPath": "creature/lich2/lich2.m2",
+  "textureFiles": {"11": 3482595},
+  "creatureGeosetDataID": 668,
+  "creatureGeosets": [{"index": 0, "value": 6}, {"index": 1, "value": 1}],
+  "npcIDForReferenceOnly": 162309,
+  "source": "https://www.wowhead.com/npc=162309/kultharok",
+  "modelMetadataSource": "https://wow.zamimg.com/modelviewer/live/meta/npc/96088.json",
+  "checkedAt": "2026-09-06",
+  "verifiedInClient": false
+}

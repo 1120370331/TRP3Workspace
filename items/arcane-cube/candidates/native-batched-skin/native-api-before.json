@@ -1,0 +1,189 @@
+{
+  "environment": "Lua 5.1 mock host; CPU comparison, not WoW FPS",
+  "adapterBundle": "items\\arcane-cube\\candidates\\tidal-pixels\\engine.generated.lua",
+  "frames": 36,
+  "warmupFrames": 6,
+  "setterCountFrames": 36,
+  "sourceFiles": {
+    "math3d.lua": "f31d1c18b48a0d209e69c7214e8ee8b7b5853e725931d22e31bfbe5390efb095",
+    "scene3d.lua": "ae2b4fa57851a1448f9fcddb31456c44333d934b91b114f7d9e2cc074819396d",
+    "view3d.lua": "08192fe1d49d725b898ec076fc694d9c226384b7d687d07a7e4b53b0ff6d9ab2",
+    "particles3d.lua": "ad0e7930f59977305645cd145a202cdee96a4fd2a83e0d71512af2b901c17394"
+  },
+  "scenarios": [
+    {
+      "order": 3,
+      "initial": {
+        "nativeFrames": 730,
+        "visibleTextures": 730
+      },
+      "projectMeanMs": 4.3,
+      "drawMeanMs": 2.866666666666667,
+      "combinedP95Ms": 9.000000000000007,
+      "setterCalls": 159397,
+      "callsByMethod": {
+        "ClearAllPoints": 13259,
+        "Hide": 85,
+        "SetBlendMode": 5,
+        "SetFrameLevel": 10914,
+        "SetPoint": 13259,
+        "SetScale": 36,
+        "SetSize": 26472,
+        "SetTexCoord": 5,
+        "SetTexture": 10,
+        "SetVertexColor": 3880,
+        "SetVertexOffset": 52724,
+        "Show": 38748
+      },
+      "resources": {
+        "emitters3D": 0,
+        "particles3D": 0,
+        "particles3DCapacity": 1536,
+        "particles3DDropped": 0,
+        "particles3DEvicted": 0,
+        "particles3DPeak": 0,
+        "particles3DPooled": 0,
+        "particles3DRenderDropped": 0,
+        "particles3DSpawned": 0,
+        "particles3DVisible": 0,
+        "scene3DDraws": 735,
+        "scene3DDropped": 0,
+        "scene3DFaces": 1489,
+        "scene3DNodes": 27,
+        "scene3DPooledQuads": 735,
+        "scene3DProjectedNodes": 0,
+        "scene3DTransformedNodes": 10,
+        "scene3DVisibleFaces": 735
+      }
+    },
+    {
+      "order": 4,
+      "initial": {
+        "nativeFrames": 873,
+        "visibleTextures": 873
+      },
+      "projectMeanMs": 5.300000000000001,
+      "drawMeanMs": 3.6999999999999957,
+      "combinedP95Ms": 13.00000000000001,
+      "setterCalls": 171421,
+      "callsByMethod": {
+        "ClearAllPoints": 13410,
+        "Hide": 76,
+        "SetBlendMode": 2,
+        "SetFrameLevel": 16798,
+        "SetPoint": 13410,
+        "SetScale": 36,
+        "SetSize": 26780,
+        "SetTexCoord": 2,
+        "SetTexture": 4,
+        "SetVertexColor": 3487,
+        "SetVertexOffset": 53248,
+        "Show": 44168
+      },
+      "resources": {
+        "emitters3D": 0,
+        "particles3D": 0,
+        "particles3DCapacity": 1536,
+        "particles3DDropped": 0,
+        "particles3DEvicted": 0,
+        "particles3DPeak": 0,
+        "particles3DPooled": 0,
+        "particles3DRenderDropped": 0,
+        "particles3DSpawned": 0,
+        "particles3DVisible": 0,
+        "scene3DDraws": 875,
+        "scene3DDropped": 0,
+        "scene3DFaces": 1773,
+        "scene3DNodes": 57,
+        "scene3DPooledQuads": 875,
+        "scene3DProjectedNodes": 0,
+        "scene3DTransformedNodes": 17,
+        "scene3DVisibleFaces": 875
+      }
+    },
+    {
+      "order": 5,
+      "initial": {
+        "nativeFrames": 1264,
+        "visibleTextures": 1264
+      },
+      "projectMeanMs": 7.366666666666677,
+      "drawMeanMs": 5.1999999999999895,
+      "combinedP95Ms": 16.000000000000014,
+      "setterCalls": 236522,
+      "callsByMethod": {
+        "ClearAllPoints": 17713,
+        "Hide": 88,
+        "SetFrameLevel": 28890,
+        "SetPoint": 17713,
+        "SetScale": 36,
+        "SetSize": 35390,
+        "SetVertexColor": 3935,
+        "SetVertexOffset": 70331,
+        "Show": 62426
+      },
+      "resources": {
+        "emitters3D": 0,
+        "particles3D": 0,
+        "particles3DCapacity": 1536,
+        "particles3DDropped": 0,
+        "particles3DEvicted": 0,
+        "particles3DPeak": 0,
+        "particles3DPooled": 0,
+        "particles3DRenderDropped": 0,
+        "particles3DSpawned": 0,
+        "particles3DVisible": 0,
+        "scene3DDraws": 1261,
+        "scene3DDropped": 0,
+        "scene3DFaces": 2571,
+        "scene3DNodes": 99,
+        "scene3DPooledQuads": 1264,
+        "scene3DProjectedNodes": 0,
+        "scene3DTransformedNodes": 26,
+        "scene3DVisibleFaces": 1261
+      }
+    },
+    {
+      "order": 7,
+      "initial": {
+        "nativeFrames": 1961,
+        "visibleTextures": 1961
+      },
+      "projectMeanMs": 11.299999999999992,
+      "drawMeanMs": 7.8333333333333295,
+      "combinedP95Ms": 23.00000000000013,
+      "setterCalls": 345500,
+      "callsByMethod": {
+        "ClearAllPoints": 24355,
+        "Hide": 109,
+        "SetFrameLevel": 52088,
+        "SetPoint": 24355,
+        "SetScale": 36,
+        "SetSize": 48674,
+        "SetVertexColor": 5129,
+        "SetVertexOffset": 96540,
+        "Show": 94214
+      },
+      "resources": {
+        "emitters3D": 0,
+        "particles3D": 0,
+        "particles3DCapacity": 1536,
+        "particles3DDropped": 0,
+        "particles3DEvicted": 0,
+        "particles3DPeak": 0,
+        "particles3DPooled": 0,
+        "particles3DRenderDropped": 0,
+        "particles3DSpawned": 0,
+        "particles3DVisible": 0,
+        "scene3DDraws": 1961,
+        "scene3DDropped": 0,
+        "scene3DFaces": 3956,
+        "scene3DNodes": 219,
+        "scene3DPooledQuads": 1961,
+        "scene3DProjectedNodes": 0,
+        "scene3DTransformedNodes": 50,
+        "scene3DVisibleFaces": 1961
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Optional, client-unverified WoW-native asset candidates for garden-defense. Do not promote a candidate to a shipped asset until it passes the in-client checks in wow-assets.md.",
+  "engineContract": {
+    "model": "content.assets.models.<key> accepts {kind:'fileID',id:<FileDataID>} or {kind:'creatureDisplayID',id:<CreatureDisplayID>}; all model entries below are fileID candidates.",
+    "sound": "content.sounds.<key> accepts {kind:'soundKitID',id:<SoundKitID>,channel:'SFX'}; native BGM instead uses content.music.<key>.nativeFileId with channel Music.",
+    "fallback": "Keep the current icon/vector/rect presentation as the required fallback. A successful SetModel/PlaySound call alone is not visual or audible acceptance."
+  },
+  "models": {
+    "plant_lasher": { "kind": "fileID", "id": 124753, "path": "creature/lasher/lasher.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_low_for_PvZ_silhouette", "use": "shared mobile-plant candidate: pea shooter, snow pea, repeater, chomper" },
+    "plant_orchid": { "kind": "fileID", "id": 124765, "path": "creature/lasherorchid/lasherorchid.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_medium_for_sunflower", "use": "sunflower candidate" },
+    "fungus_sporeling": { "kind": "fileID", "id": 126055, "path": "creature/sporeling/sporeling.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_medium_for_small_puff_shroom", "use": "puff-shroom candidate" },
+    "fungus_orange": { "kind": "fileID", "id": 193920, "path": "world/expansion01/doodads/zangar/mushroom/zangarmushroom06_orange.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_low_for_sun_shroom", "use": "sun-shroom candidate; static doodad" },
+    "cherry_bomb": { "kind": "fileID", "id": 234505, "path": "creature/alliancebomb/alliancebomb.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_medium_for_bomb_role", "use": "cherry-bomb gameplay substitute" },
+    "potato_mine": { "kind": "fileID", "id": 126022, "path": "creature/spells/landmine01.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_high_for_mine_role", "use": "potato-mine gameplay substitute" },
+    "zombie_base": { "kind": "fileID", "id": 126570, "path": "creature/zombie/zombie.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_high_for_basic-zombie-role", "use": "ordinary zombie; use vector overlays for cone/bucket/newspaper/pole variants" },
+    "frost_projectile": { "kind": "fileID", "id": 166214, "path": "spells/frostbolt.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_high_for_frost-shot-role", "use": "snow-pea projectile, not a plant" },
+    "nature_projectile": { "kind": "fileID", "id": 166575, "path": "spells/missile_wave_nature.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_medium_for_pea-shot-role", "use": "pea/repeater projectile candidate" },
+    "explosion_effect": { "kind": "fileID", "id": 165744, "path": "spells/bomb_explosiona.m2", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_high_for_explosion-role", "use": "short-lived cherry/mine hit effect" }
+  },
+  "plantMapping": {
+    "pea_shooter": "plant_lasher + nature_projectile",
+    "sunflower": "plant_orchid",
+    "cherry_bomb": "cherry_bomb + explosion_effect",
+    "wall_nut": "no model candidate selected; retain vector/icon silhouette",
+    "potato_mine": "potato_mine + explosion_effect",
+    "snow_pea": "plant_lasher + frost_projectile",
+    "chomper": "plant_lasher; retain vector mouth overlay",
+    "repeater": "plant_lasher + nature_projectile; render two projectiles in game logic",
+    "puff_shroom": "fungus_sporeling",
+    "sun_shroom": "fungus_orange"
+  },
+  "zombieMapping": {
+    "ordinary": "zombie_base",
+    "conehead": "zombie_base + vector cone overlay",
+    "buckethead": "zombie_base + vector bucket overlay",
+    "pole_vault": "zombie_base + vector pole overlay",
+    "newspaper": "zombie_base + vector newspaper overlay"
+  },
+  "sounds": {
+    "plant": { "kind": "soundKitID", "id": 44308, "symbol": "UI_GARRISON_ARCHITECT_TABLE_BUILDING_PLACEMENT", "source": "Gethe/wow-ui-source SoundKitConstants.lua", "confidence": "high_for_symbol-id_medium_for_audibility_fit" },
+    "collect_sun": { "kind": "soundKitID", "id": 688, "symbol": "UI_CURSOR_PICKUP_OBJECT", "source": "Gethe/wow-ui-source SoundKitConstants.lua", "confidence": "high_for_symbol-id_medium_for_audibility_fit" },
+    "shoot": { "status": "no controlled exact SoundKit candidate selected", "fallback": "silent or use UI_CURSOR_PICKUP_OBJECT only after listening test; do not claim it is a shot" },
+    "hit": { "kind": "soundKitID", "id": 97598, "symbol": "UI_73_ARTIFACT_OVERLOADED_ORB_IMPACT_LOW", "source": "Gethe/wow-ui-source SoundKitConstants.lua", "confidence": "high_for_symbol-id_low_for_audibility_fit" },
+    "explode": { "kind": "soundKitID", "id": 97597, "symbol": "UI_73_ARTIFACT_OVERLOADED_ORB_IMPACT_MEDIUM", "source": "Gethe/wow-ui-source SoundKitConstants.lua", "confidence": "high_for_symbol-id_low_for_audibility_fit" },
+    "alert": { "kind": "soundKitID", "id": 12867, "symbol": "ALARM_CLOCK_WARNING_2", "source": "Gethe/wow-ui-source SoundKitConstants.lua", "confidence": "high_for_symbol-id_medium_for_audibility_fit" },
+    "victory": { "kind": "soundKitID", "id": 43502, "symbol": "UI_GARRISON_MISSION_COMPLETE_MISSION_SUCCESS", "source": "Gethe/wow-ui-source SoundKitConstants.lua", "confidence": "high_for_symbol-id_medium_for_audibility_fit" },
+    "defeat": { "kind": "soundKitID", "id": 43503, "symbol": "UI_GARRISON_MISSION_COMPLETE_MISSION_FAIL_STINGER", "source": "Gethe/wow-ui-source SoundKitConstants.lua", "confidence": "high_for_symbol-id_medium_for_audibility_fit" }
+  },
+  "music": {
+    "garden_ambient": { "nativeFileId": 53634, "path": "sound/music/zonemusic/netherstorm/ns_netherplantintrouni02.mp3", "source": "wowdev/wow-listfile community-listfile.csv", "confidence": "high_for_file_mapping_low_for_client_playback_and_mood_fit", "note": "One controlled plant-themed ambient candidate; test looping and Music channel volume before use." }
+  }
+}

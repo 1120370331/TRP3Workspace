@@ -1,0 +1,1 @@
+/run local a,k=TRP3_API.script,"runLuaScriptEffect"local f,w=a[k]local function z()if w==a[k]then a[k]=f end;w=nil end;w=function(c,x,s)if w and x and x.classID=="0905PvZWoW0001"then z()x._G=not s and _G end return f(c,x,s)end;a[k]=w;C_Timer.After(2,z)

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0",
+  "moduleOrder": [
+    "core",
+    "math3d",
+    "particles3d",
+    "pixel-materials",
+    "surface-effects3d",
+    "scene3d",
+    "view3d",
+    "telemetry",
+    "host",
+    "surface-actors",
+    "surface",
+    "view",
+    "input",
+    "world",
+    "audio",
+    "effects",
+    "runtime"
+  ],
+  "packages": {
+    "runtime": {
+      "description": "Lifecycle, input, host window, saves, inventory and bounded diagnostics",
+      "dependencies": [],
+      "modules": [
+        "core",
+        "telemetry",
+        "host",
+        "view",
+        "input",
+        "runtime"
+      ]
+    },
+    "surface": {
+      "description": "2D canvas, text, buttons, textures and PlayerModel nodes",
+      "dependencies": [
+        "runtime"
+      ],
+      "modules": [
+        "surface"
+      ]
+    },
+    "surface-models": {
+      "description": "Shared ModelScene actors for Surface models",
+      "dependencies": [
+        "surface"
+      ],
+      "modules": [
+        "surface-actors"
+      ]
+    },
+    "world": {
+      "description": "2D entities, terrain, motion, collisions, combat and AI",
+      "dependencies": [
+        "surface"
+      ],
+      "modules": [
+        "world"
+      ]
+    },
+    "audio": {
+      "description": "Sound voices, native BGM and optional Musician integration",
+      "dependencies": [
+        "runtime"
+      ],
+      "modules": [
+        "audio"
+      ]
+    },
+    "effects": {
+      "description": "Bounded 2D texture particles and emitters",
+      "dependencies": [
+        "runtime"
+      ],
+      "modules": [
+        "effects"
+      ]
+    },
+    "scene3d": {
+      "description": "3D math, geometry, camera, picking and WoW projection",
+      "dependencies": [
+        "runtime"
+      ],
+      "modules": [
+        "math3d",
+        "scene3d",
+        "view3d"
+      ]
+    },
+    "particles3d": {
+      "description": "3D particle simulation and billboards",
+      "dependencies": [
+        "scene3d"
+      ],
+      "modules": [
+        "particles3d"
+      ]
+    },
+    "surface-effects3d": {
+      "description": "Vertex-color rim, emissive pulse and distance fog; no custom GPU shaders",
+      "dependencies": ["scene3d"],
+      "modules": ["surface-effects3d"]
+    },
+    "pixel-materials": {
+      "description": "Embedded palette/RLE pixel textures bound to mesh UVs",
+      "dependencies": [
+        "scene3d"
+      ],
+      "modules": [
+        "pixel-materials"
+      ]
+    }
+  }
+}

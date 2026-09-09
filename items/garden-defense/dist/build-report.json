@@ -1,0 +1,176 @@
+{
+  "format": "TRP3 Extended short export",
+  "candidateStatus": "requires-in-game-verification",
+  "rootId": "0905221530PvZ01",
+  "publisher": "斯提芬丶九二-金色平原",
+  "createdAt": "05/09/26 22:15:30",
+  "objectVersion": 4,
+  "releaseVersion": "0.3.0-test",
+  "target": {
+    "extendedBuild": 1061,
+    "extendedDisplayVersion": "2.3.5",
+    "note": "已核对本机安装的 Main.lua：build 1061 / 2.3.5；游戏内运行仍待验收。"
+  },
+  "sourceHash": "06db6b1999d5f077ca67dba67f6f4858459af941fe4f7eed4c2e250686891d59",
+  "effectiveHash": "8b072a1ee359d0894557a777ba253b54aa8224b8daa3b88cca2b7e4a6ba19bb0",
+  "generatorHash": "8cc91df86904f2c1a1dbea66702ed64af95104913079eebb7d9c49cc30790c5a",
+  "objectHash": "22b0ebe7bca2d43e3295e0cf63db26c9c4a5b123af6f62b8986beff7b33c7339",
+  "exportHash": "2b6f5249aed8c3cda69ff463cc341c87f8ee35103d99b7054078d6e6f93039be",
+  "engine": {
+    "path": "../../framework/item-game",
+    "apiVersion": 1,
+    "version": "0.5.0"
+  },
+  "packages": {
+    "version": "0.5.0",
+    "explicit": true,
+    "requested": [
+      "audio",
+      "world"
+    ],
+    "resolved": [
+      "audio",
+      "runtime",
+      "surface",
+      "world"
+    ],
+    "automatic": [
+      "runtime",
+      "surface"
+    ],
+    "modules": [
+      "core",
+      "telemetry",
+      "host",
+      "surface",
+      "view",
+      "input",
+      "world",
+      "audio",
+      "runtime"
+    ],
+    "dependencies": {
+      "audio": [
+        "runtime"
+      ],
+      "runtime": [],
+      "surface": [
+        "runtime"
+      ],
+      "world": [
+        "surface"
+      ]
+    }
+  },
+  "build": {
+    "profile": "release",
+    "budgets": {
+      "sourceBytes": 180000,
+      "exportCharacters": 80000
+    },
+    "logs": {
+      "persist": "manual",
+      "maxBytes": 32768
+    }
+  },
+  "packageLockHash": "51c8f8c7b936efbffd21c97e51ecf5f7a9e8c5e3d478e818ab6d09edf6eb2951",
+  "toolchain": {
+    "node": "24.13.0",
+    "zlib": "1.3.1-470d3a2",
+    "luaparse": "0.3.1"
+  },
+  "sourceFiles": {
+    "core": "558f003b9d61a26c5d20550b250e550fd41c70520069db36678a735b977a57ed",
+    "telemetry": "2a5cf92ada07ae965ef72419f980b6e36534d8901e506a11489affdf1b25505e",
+    "host": "46158e360bfcc45d848068654ce9d8da3e1d11b1ee3cb63508751f683ebad7a8",
+    "surface": "7943c1010b0f73ebc4d4d34d655e7de962a88e78abddd1a7cf3e02889455a85a",
+    "view": "c8ae093139db9b70be65f3742b3106512c1f941606043e8f99e9578f91a2cb61",
+    "input": "e7bff2b7bc6ea340b118006f36263ba72d749e7c19a09d19f859d69ce814b18e",
+    "world": "66ab71910f0ccf105c77543068eb466a016cebc51868615543a10dc6f9d54507",
+    "audio": "a568d5a2b67801a39d33eee10fca95857a30f21f1c95e8861c8d771cd5010554",
+    "runtime": "68fe08e656b0cb10be29ca2fff26e2a1549bc56d7377652665f6401f194b2cd7"
+  },
+  "gameModules": {
+    "sprites": {
+      "path": "src/sprites.lua",
+      "hash": "4991401115898f1c059d6c6190c6abcc362d106717664ce0779170c21f054dc9"
+    },
+    "ui": {
+      "path": "src/ui.lua",
+      "hash": "665628a4aef39e7c10b9fbb27c457424d61a6651aa70e7d6b3cf2a079aca0aa0"
+    }
+  },
+  "sizes": {
+    "sourceBytes": 149384,
+    "exportCharacters": 67036,
+    "macroCharacters": 253,
+    "macroBytes": 253,
+    "macroLimit": 255,
+    "unminifiedSourceBytes": 196709,
+    "engineSourceBytes": 158901
+  },
+  "sizeBreakdown": {
+    "engine": {
+      "core": 10087,
+      "telemetry": 7843,
+      "host": 13981,
+      "surface": 34795,
+      "view": 22337,
+      "input": 4886,
+      "world": 16325,
+      "audio": 20580,
+      "runtime": 28067
+    },
+    "game": {
+      "sprites": 2911,
+      "ui": 14284,
+      "entry": 18821
+    },
+    "documents": {
+      "ig_help": 1223,
+      "ig_manifest": 298,
+      "ig_game": 6469,
+      "ig_assets": 13,
+      "ig_levels": 55,
+      "ig_music": 2
+    }
+  },
+  "bootstrap": {
+    "workflowOrder": [
+      "secure_macro",
+      "delay",
+      "script"
+    ],
+    "delaySeconds": 0.1,
+    "injectionTimeoutSeconds": 2
+  },
+  "checks": {
+    "typedRoundTrip": true,
+    "sourceByteEquality": true,
+    "canonicalLuaLineEndings": true,
+    "structuralValidation": true,
+    "securityScan": true,
+    "lua51Syntax": true,
+    "packageDependencies": true,
+    "sizeBudgets": true,
+    "minifiedASTEquality": true,
+    "frozenLockfile": false
+  },
+  "security": {
+    "level": 1,
+    "details": {
+      "SEC_REASON_MACRO": [
+        "0905221530PvZ01"
+      ],
+      "SEC_REASON_SCRIPT": [
+        "0905221530PvZ01",
+        "0905221530PvZ01",
+        "0905221530PvZ01",
+        "0905221530PvZ01",
+        "0905221530PvZ01",
+        "0905221530PvZ01"
+      ]
+    }
+  },
+  "inGameVerified": false
+}

@@ -1,0 +1,304 @@
+{
+  "presentation": "game",
+  "hideHostFooter": true,
+  "simulationHz": 60,
+  "viewport": {
+    "width": 960,
+    "height": 610
+  },
+  "limits": {
+    "maxEntities": 1,
+    "maxScene3DNodes": 256,
+    "maxScene3DFaces": 4096,
+    "maxParticles3D": 1536,
+    "maxEmitters3D": 24,
+    "maxParticleSpawns3DPerStep": 768
+  },
+  "controls": {
+    "turn": [
+      "J"
+    ],
+    "inverse": [
+      "K"
+    ],
+    "undo": [
+      "Z"
+    ]
+  },
+  "prefabs": {},
+  "actions": {},
+  "levels": {},
+  "assets": {
+    "textures": {},
+    "models": {}
+  },
+  "sounds": {},
+  "music": {},
+  "items": {},
+  "fireworksLab": {
+    "duration": 5,
+    "warmup": 1
+  },
+  "particles3d": {
+    "peony": {
+      "shape": "sphere",
+      "count": 112,
+      "speed": [
+        1.2,
+        2.1
+      ],
+      "lifetime": [
+        1.1,
+        1.8
+      ],
+      "size": [
+        0.055,
+        0.105
+      ],
+      "endSize": 0.012,
+      "drag": 0.42,
+      "gravity": {
+        "x": 0,
+        "y": -0.8,
+        "z": 0
+      },
+      "startColor": [
+        0.75,
+        0.35,
+        1,
+        1
+      ],
+      "endColor": [
+        0.25,
+        0.2,
+        1,
+        0
+      ]
+    },
+    "ring": {
+      "shape": "ring",
+      "count": 112,
+      "speed": [
+        1.7,
+        1.85
+      ],
+      "lifetime": [
+        1.35,
+        1.5
+      ],
+      "size": [
+        0.065,
+        0.11
+      ],
+      "endSize": 0.01,
+      "drag": 0.35,
+      "gravity": {
+        "x": 0,
+        "y": -0.18,
+        "z": 0
+      },
+      "direction": {
+        "x": 0.25,
+        "y": 1,
+        "z": 0.5
+      },
+      "startColor": [
+        0.18,
+        0.9,
+        1,
+        1
+      ],
+      "endColor": [
+        0.1,
+        0.3,
+        1,
+        0
+      ]
+    },
+    "willow": {
+      "shape": "sphere",
+      "count": 128,
+      "speed": [
+        1.15,
+        2.25
+      ],
+      "lifetime": [
+        2,
+        3.2
+      ],
+      "size": [
+        0.055,
+        0.09
+      ],
+      "endSize": 0.008,
+      "drag": 0.6,
+      "gravity": {
+        "x": 0,
+        "y": -1.1,
+        "z": 0
+      },
+      "startColor": [
+        1,
+        0.8,
+        0.3,
+        1
+      ],
+      "endColor": [
+        1,
+        0.25,
+        0.02,
+        0
+      ]
+    },
+    "fountain": {
+      "mode": "continuous",
+      "shape": "cone",
+      "rate": 160,
+      "duration": 2.4,
+      "spread": 0.24,
+      "speed": [
+        2.2,
+        3.8
+      ],
+      "lifetime": [
+        0.8,
+        1.4
+      ],
+      "size": [
+        0.055,
+        0.1
+      ],
+      "endSize": 0.008,
+      "gravity": {
+        "x": 0,
+        "y": -2.2,
+        "z": 0
+      },
+      "startColor": [
+        0.2,
+        1,
+        0.52,
+        1
+      ],
+      "endColor": [
+        0.04,
+        0.38,
+        0.22,
+        0
+      ]
+    },
+    "crackle": {
+      "shape": "sphere",
+      "count": 56,
+      "speed": [
+        0.7,
+        1.45
+      ],
+      "lifetime": [
+        0.35,
+        0.65
+      ],
+      "size": [
+        0.075,
+        0.13
+      ],
+      "endSize": 0.008,
+      "drag": 0.35,
+      "gravity": {
+        "x": 0,
+        "y": -0.5,
+        "z": 0
+      },
+      "startColor": [
+        1,
+        0.45,
+        0.72,
+        1
+      ],
+      "endColor": [
+        1,
+        0.1,
+        0.1,
+        0
+      ]
+    },
+    "rocket_trail": {
+      "mode": "continuous",
+      "shape": "cone",
+      "rate": 140,
+      "duration": 0.65,
+      "spread": 0.32,
+      "direction": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "speed": [
+        0.1,
+        0.45
+      ],
+      "lifetime": [
+        0.12,
+        0.3
+      ],
+      "size": [
+        0.045,
+        0.085
+      ],
+      "endSize": 0.006,
+      "priority": 1,
+      "gravity": {
+        "x": 0,
+        "y": -0.5,
+        "z": 0
+      },
+      "startColor": [
+        1,
+        0.8,
+        0.35,
+        1
+      ],
+      "endColor": [
+        1,
+        0.2,
+        0.02,
+        0
+      ]
+    },
+    "flash": {
+      "shape": "sphere",
+      "count": 8,
+      "speed": [
+        0.05,
+        0.2
+      ],
+      "lifetime": [
+        0.12,
+        0.22
+      ],
+      "size": [
+        0.2,
+        0.35
+      ],
+      "endSize": 0.004,
+      "priority": 2,
+      "gravity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "startColor": [
+        1,
+        1,
+        0.85,
+        1
+      ],
+      "endColor": [
+        1,
+        0.5,
+        0.1,
+        0
+      ]
+    }
+  }
+}

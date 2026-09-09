@@ -1,0 +1,22 @@
+{
+  "gameId": "performance_lab",
+  "slug": "performance-lab",
+  "name": "IG 引擎性能测试台",
+  "description": "单道具引擎测试候选：纹理、粒子、模型、输入、碰撞、AI、弹体、音频、物品变量与库存。含可复制日志和有界粒子压力阶段。",
+  "icon": "inv_misc_enggizmos_17",
+  "rootId": "0905170116PLab1",
+  "publisher": "斯提芬丶九二-金色平原",
+  "createdAt": "05/09/26 17:01:16",
+  "savedAt": "08/09/26 21:48:11",
+  "objectVersion": 10,
+  "releaseVersion": "0.4.0-test",
+  "engineApiVersion": 1,
+  "saveVersion": 1,
+  "entry": "game.lua",
+  "content": "content.json",
+  "target": {
+    "extendedBuild": 1061,
+    "extendedDisplayVersion": "v-dev",
+    "note": "User log confirmed WoW 12.1.0 build 69587 and TRP3E 1061; display version remains a pinned reference value. BGM fix awaits in-game retest."
+  }
+}

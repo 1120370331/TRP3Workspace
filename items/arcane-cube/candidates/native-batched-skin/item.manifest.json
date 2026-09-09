@@ -1,0 +1,48 @@
+{
+  "gameId": "arcane_cube",
+  "slug": "arcane-cube",
+  "name": "奥术魔方",
+  "description": "斯托颂奥术工坊出品。2–7阶魔方默认使用六面海潮奥术点阵皮肤，图案随方块转层；支持经典六色切换、计时挑战、存档与复原烟花。",
+  "icon": "inv_misc_gem_variety_02",
+  "quality": 3,
+  "rightText": "斯托颂奥术工坊",
+  "showReleaseVersion": true,
+  "actionText": "解开魔方",
+  "rootId": "0908ArcCube001",
+  "publisher": "斯提芬丶九二-金色平原",
+  "createdAt": "08/09/26 12:00:00",
+  "savedAt": "09/09/26 00:41:42",
+  "objectVersion": 6,
+  "releaseVersion": "0.4.2-test",
+  "engineApiVersion": 1,
+  "engine": "../../framework/item-game",
+  "modules": {
+    "puzzle": "src/puzzle.lua",
+    "geometry": "src/geometry.lua",
+    "ui": "src/ui.lua",
+    "fireworks": "src/fireworks.lua",
+    "pixel_art": "src/pixel-art.lua",
+    "materials": "src/materials.lua"
+  },
+  "saveVersion": 1,
+  "entry": "game.lua",
+  "content": "content.json",
+  "target": {
+    "extendedBuild": 1061,
+    "extendedDisplayVersion": "2.3.5",
+    "note": "目标沿用已核对的 TRP3E 1061；当前 3D 适配器需客户端验收。"
+  },
+  "helpText": "奥术魔方\n\n导入后添加到 TRP3 背包，右键“解开魔方”。无需额外素材包。\n\n选择 2–7 阶；右键拖动观察，滚轮缩放。左键点选方块，再选择 X/Y/Z 轴与层，按 ±90° 转动；也可直接拖动方块转层。层号沿所选轴从负到正排列。J/K 转层，Z 撤销。\n\n“打乱”开始挑战，第一次转层开始计时；六个面各自同色即获胜。撤销或回放后作为辅助练习，不刷新挑战最佳成绩。“回放复原”按本局完整操作记录逆向返回，不是通用最短解求解器。\n\nEsc 暂停/继续；关闭窗口保存，重新使用继续。未完成的动画在重开时返回上一完整步。切阶和新局替换局面前会在游戏内确认。\n\n最多记录 2000 步；达到上限后可撤销、回放或开新局。阶数与几何预算有界。当前为测试候选，WoW 客户端视觉、拖动捕获和性能仍需实机确认。\n\n0.2.0：手动复原或回放复原完成后自动燃放三维烟花。右上“烟花试验”可选择礼花、星环、金柳、喷泉、连环爆裂，切换低/标准/高密度，单发或混合燃放。四阶段对照包含空场、低密度、标准与高密度；每段1秒预热+5秒采样。暂停会中断对照；可随时停止、导出日志。浏览器模拟的帧率不算WoW性能。\n\n0.4.0：新增“材质试验”。六面海潮奥术参考图已重绘为24×24点阵，以共享调色板和RLE压缩硬编码。三个三维主体可换材质、旋转UV、转动观察，测试贴图随模型移动、缩放和父子变换。PNG/SVG仅为制作预览，客户端不读取图片文件。\n\n0.4.1：海潮点阵现在默认应用到实际魔方。每个整面使用一幅图案，按阶数分配给对应小方块，转层和读档时图案随原方块保持绑定。点击“皮肤：海潮/经典”切换并保存偏好。彩色细边保留六色辨识；皮肤是外观，胜负仍按原有六面颜色规则判定。\n\n0.4.2：WoW原生贴图批处理优化。同一源面的色块共用Frame，相邻加色烟花共用Frame；保留海潮皮肤全部点阵细节。烟花和材质面板显示原生Frame数，实机性能可用四阶段对照导出日志。",
+  "packages": [
+    "surface",
+    "particles3d",
+    "pixel-materials"
+  ],
+  "build": {
+    "profile": "development",
+    "budgets": {
+      "sourceBytes": 300000,
+      "exportCharacters": 120000
+    }
+  }
+}

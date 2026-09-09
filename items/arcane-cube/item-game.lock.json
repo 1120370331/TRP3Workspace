@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "0.5.0",
+  "catalogHash": "739628d7f666ff3f0eb51229dc796d9c7b90d56f4a214c5e54ca7c9731c45218",
+  "generatorHash": "8cc91df86904f2c1a1dbea66702ed64af95104913079eebb7d9c49cc30790c5a",
+  "requested": [
+    "particles3d",
+    "pixel-materials",
+    "surface",
+    "surface-effects3d"
+  ],
+  "resolved": [
+    "particles3d",
+    "pixel-materials",
+    "runtime",
+    "scene3d",
+    "surface",
+    "surface-effects3d"
+  ],
+  "modules": {
+    "core": "558f003b9d61a26c5d20550b250e550fd41c70520069db36678a735b977a57ed",
+    "math3d": "f31d1c18b48a0d209e69c7214e8ee8b7b5853e725931d22e31bfbe5390efb095",
+    "particles3d": "de682bf6d0d18f33370984a70f229c9d572a9c66e32105047315adbbce001b11",
+    "pixel-materials": "dd069add7d3b5b208f399b54dcab894f6aabca3cdbe517db7933326e28ca1f50",
+    "surface-effects3d": "385cef63e25a480de39c26831ee9b280df0fbeb5fdba66cc635ce40bf20aac7c",
+    "scene3d": "44dbdf2b09bbb53dafece1c73da13fb0bb2acb05ec50d1d80f5680be2c8cb4f8",
+    "view3d": "1ffe8fec1251f59a26525f7023ba9d8a18632307e855ea118ac0e16d541e78b8",
+    "telemetry": "2a5cf92ada07ae965ef72419f980b6e36534d8901e506a11489affdf1b25505e",
+    "host": "46158e360bfcc45d848068654ce9d8da3e1d11b1ee3cb63508751f683ebad7a8",
+    "surface": "7943c1010b0f73ebc4d4d34d655e7de962a88e78abddd1a7cf3e02889455a85a",
+    "view": "c8ae093139db9b70be65f3742b3106512c1f941606043e8f99e9578f91a2cb61",
+    "input": "e7bff2b7bc6ea340b118006f36263ba72d749e7c19a09d19f859d69ce814b18e",
+    "runtime": "68fe08e656b0cb10be29ca2fff26e2a1549bc56d7377652665f6401f194b2cd7"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "trp3-item-workshop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-item-game.mjs items/performance-lab/item.json",
+    "build:garden": "node tools/build-item-game.mjs items/garden-defense/item.json",
+    "build:garden-wow": "node tools/build-item-game.mjs items/garden-defense-wow/item.json",
+    "build:cube": "node tools/build-item-game.mjs items/arcane-cube/item.json",
+    "test:cube": "python items/arcane-cube/tests/test_cube.py",
+    "test": "node --test tests/build.test.mjs tests/packages.test.mjs && python tools/test-engine.py && python items/garden-defense/tests/test_game.py && python tests/test_scene3d.py && python tests/test_particles3d.py && python tests/test_pixel_materials.py && python tests/test_surface_effects3d.py && python items/arcane-cube/tests/test_cube.py && python tests/test_packages.py",
+    "test:garden": "python items/garden-defense/tests/test_game.py",
+    "analyze": "node tools/analyze-perf-log.mjs",
+    "build:all": "node tools/build-all-item-games.mjs",
+    "packages": "node tools/build-item-game.mjs --list-packages",
+    "test:packages": "node --test tests/packages.test.mjs && python tests/test_packages.py",
+    "test:native": "python items/garden-defense-wow/tests/test_native.py",
+    "build:tidal-pixels": "python tools/build-tidal-pixels.py"
+  },
+  "devDependencies": {
+    "luaparse": "^0.3.1"
+  }
+}

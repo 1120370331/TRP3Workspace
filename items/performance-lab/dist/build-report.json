@@ -1,0 +1,216 @@
+{
+  "format": "TRP3 Extended short export",
+  "candidateStatus": "requires-in-game-verification",
+  "rootId": "0905170116PLab1",
+  "publisher": "斯提芬丶九二-金色平原",
+  "createdAt": "05/09/26 17:01:16",
+  "objectVersion": 10,
+  "releaseVersion": "0.4.0-test",
+  "target": {
+    "extendedBuild": 1061,
+    "extendedDisplayVersion": "v-dev",
+    "note": "User log confirmed WoW 12.1.0 build 69587 and TRP3E 1061; display version remains a pinned reference value. BGM fix awaits in-game retest."
+  },
+  "sourceHash": "fa42d43de0c2ec259b824785669465419f90b1578f15085fad937e77640ae3e6",
+  "effectiveHash": "3dbde6445c7eafc5af40caba6ff38d8004c6557c04103aeb7fb6c0ef41e5ebdb",
+  "generatorHash": "8cc91df86904f2c1a1dbea66702ed64af95104913079eebb7d9c49cc30790c5a",
+  "objectHash": "ef4d3d2d939a91cb8f0254d7e32be41c114b1247ec2b8b220e0f87597550a60c",
+  "exportHash": "b3580cd1054d85e3b1b0d3b23c2a80e5a7192a4846e472ae559a74378d5220c3",
+  "engine": {
+    "path": "../../framework/item-game",
+    "apiVersion": 1,
+    "version": "0.5.0"
+  },
+  "packages": {
+    "version": "0.5.0",
+    "explicit": false,
+    "requested": [
+      "audio",
+      "effects",
+      "particles3d",
+      "pixel-materials",
+      "runtime",
+      "scene3d",
+      "surface",
+      "surface-effects3d",
+      "surface-models",
+      "world"
+    ],
+    "resolved": [
+      "audio",
+      "effects",
+      "particles3d",
+      "pixel-materials",
+      "runtime",
+      "scene3d",
+      "surface",
+      "surface-effects3d",
+      "surface-models",
+      "world"
+    ],
+    "automatic": [],
+    "modules": [
+      "core",
+      "math3d",
+      "particles3d",
+      "pixel-materials",
+      "surface-effects3d",
+      "scene3d",
+      "view3d",
+      "telemetry",
+      "host",
+      "surface-actors",
+      "surface",
+      "view",
+      "input",
+      "world",
+      "audio",
+      "effects",
+      "runtime"
+    ],
+    "dependencies": {
+      "audio": [
+        "runtime"
+      ],
+      "effects": [
+        "runtime"
+      ],
+      "particles3d": [
+        "scene3d"
+      ],
+      "pixel-materials": [
+        "scene3d"
+      ],
+      "runtime": [],
+      "scene3d": [
+        "runtime"
+      ],
+      "surface": [
+        "runtime"
+      ],
+      "surface-effects3d": [
+        "scene3d"
+      ],
+      "surface-models": [
+        "surface"
+      ],
+      "world": [
+        "surface"
+      ]
+    }
+  },
+  "build": {
+    "profile": "development",
+    "budgets": {},
+    "logs": {
+      "persist": "auto",
+      "maxBytes": 190000
+    }
+  },
+  "packageLockHash": "78daf4d043bf0703a2cd5791270ca22ba3cc07527d2b9cf171d1948f19f6f329",
+  "toolchain": {
+    "node": "24.13.0",
+    "zlib": "1.3.1-470d3a2",
+    "luaparse": "0.3.1"
+  },
+  "sourceFiles": {
+    "core": "558f003b9d61a26c5d20550b250e550fd41c70520069db36678a735b977a57ed",
+    "math3d": "f31d1c18b48a0d209e69c7214e8ee8b7b5853e725931d22e31bfbe5390efb095",
+    "particles3d": "de682bf6d0d18f33370984a70f229c9d572a9c66e32105047315adbbce001b11",
+    "pixel-materials": "dd069add7d3b5b208f399b54dcab894f6aabca3cdbe517db7933326e28ca1f50",
+    "surface-effects3d": "385cef63e25a480de39c26831ee9b280df0fbeb5fdba66cc635ce40bf20aac7c",
+    "scene3d": "44dbdf2b09bbb53dafece1c73da13fb0bb2acb05ec50d1d80f5680be2c8cb4f8",
+    "view3d": "1ffe8fec1251f59a26525f7023ba9d8a18632307e855ea118ac0e16d541e78b8",
+    "telemetry": "2a5cf92ada07ae965ef72419f980b6e36534d8901e506a11489affdf1b25505e",
+    "host": "46158e360bfcc45d848068654ce9d8da3e1d11b1ee3cb63508751f683ebad7a8",
+    "surface-actors": "7bd75cf4a62aff2f73b90f6d7f64ddc74f9c0f1bb2863710402f8d30a4dc5c36",
+    "surface": "7943c1010b0f73ebc4d4d34d655e7de962a88e78abddd1a7cf3e02889455a85a",
+    "view": "c8ae093139db9b70be65f3742b3106512c1f941606043e8f99e9578f91a2cb61",
+    "input": "e7bff2b7bc6ea340b118006f36263ba72d749e7c19a09d19f859d69ce814b18e",
+    "world": "66ab71910f0ccf105c77543068eb466a016cebc51868615543a10dc6f9d54507",
+    "audio": "a568d5a2b67801a39d33eee10fca95857a30f21f1c95e8861c8d771cd5010554",
+    "effects": "352db31ab342ac22044beebab14efdd469ea1931107da71a557c15875284d333",
+    "runtime": "68fe08e656b0cb10be29ca2fff26e2a1549bc56d7377652665f6401f194b2cd7"
+  },
+  "gameModules": {},
+  "sizes": {
+    "sourceBytes": 300601,
+    "exportCharacters": 109277,
+    "macroCharacters": 253,
+    "macroBytes": 253,
+    "macroLimit": 255,
+    "unminifiedSourceBytes": 300601,
+    "engineSourceBytes": 286008
+  },
+  "sizeBreakdown": {
+    "engine": {
+      "core": 10087,
+      "math3d": 5208,
+      "particles3d": 18238,
+      "pixel-materials": 9268,
+      "surface-effects3d": 3988,
+      "scene3d": 27166,
+      "view3d": 14669,
+      "telemetry": 7843,
+      "host": 13981,
+      "surface-actors": 22076,
+      "surface": 34795,
+      "view": 22337,
+      "input": 4886,
+      "world": 16325,
+      "audio": 20580,
+      "effects": 26494,
+      "runtime": 28067
+    },
+    "game": {
+      "entry": 12181
+    },
+    "documents": {
+      "ig_help": 1427,
+      "ig_manifest": 283,
+      "ig_game": 2958,
+      "ig_assets": 270,
+      "ig_levels": 119,
+      "ig_music": 108
+    }
+  },
+  "bootstrap": {
+    "workflowOrder": [
+      "secure_macro",
+      "delay",
+      "script"
+    ],
+    "delaySeconds": 0.1,
+    "injectionTimeoutSeconds": 2
+  },
+  "checks": {
+    "typedRoundTrip": true,
+    "sourceByteEquality": true,
+    "canonicalLuaLineEndings": true,
+    "structuralValidation": true,
+    "securityScan": true,
+    "lua51Syntax": true,
+    "packageDependencies": true,
+    "sizeBudgets": true,
+    "minifiedASTEquality": false,
+    "frozenLockfile": false
+  },
+  "security": {
+    "level": 1,
+    "details": {
+      "SEC_REASON_MACRO": [
+        "0905170116PLab1"
+      ],
+      "SEC_REASON_SCRIPT": [
+        "0905170116PLab1",
+        "0905170116PLab1",
+        "0905170116PLab1",
+        "0905170116PLab1",
+        "0905170116PLab1",
+        "0905170116PLab1",
+        "gear_blade"
+      ]
+    }
+  },
+  "inGameVerified": false
+}

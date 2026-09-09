@@ -1,0 +1,40 @@
+{
+  "gameId": "garden_defense",
+  "slug": "garden-defense",
+  "name": "植物大战僵尸 · 艾泽拉斯庭院",
+  "description": "从一小块草坪开始，守住十场进攻。十种植物依次解锁，三份独立花园存档，战局自动保存在本道具中。",
+  "icon": "inv_misc_flower_02",
+  "actionText": "进入庭院",
+  "rootId": "0905221530PvZ01",
+  "publisher": "斯提芬丶九二-金色平原",
+  "createdAt": "05/09/26 22:15:30",
+  "savedAt": "08/09/26 21:48:11",
+  "objectVersion": 4,
+  "releaseVersion": "0.3.0-test",
+  "engineApiVersion": 1,
+  "engine": "../../framework/item-game",
+  "modules": {
+    "sprites": "src/sprites.lua",
+    "ui": "src/ui.lua"
+  },
+  "saveVersion": 1,
+  "entry": "game.lua",
+  "content": "content.json",
+  "target": {
+    "extendedBuild": 1061,
+    "extendedDisplayVersion": "2.3.5",
+    "note": "已核对本机安装的 Main.lua：build 1061 / 2.3.5；游戏内运行仍待验收。"
+  },
+  "helpText": "植物大战僵尸 · 艾泽拉斯庭院\n\n导入本道具后，添加到 TRP3 背包并右键“进入庭院”。首次导入需要按 TRP3 提示审阅脚本和宏。\n\n先选择空槽建档，再在庭院地图选择关卡。点击种子卡，再点击草坪种植；点击阳光收集。铲子移除植物，收阳按钮收集场上阳光。每条路有一台一次性割草机；僵尸越过没有割草机的家门即失败。\n\n十关依次开放：豌豆射手、向日葵、樱桃炸弹、坚果墙、土豆地雷、寒冰射手、大嘴花、双发射手、小喷菇、阳光菇。第九关起为夜间，天空不掉阳光。\n\n三个存档槽独立保存进度、金币、植物解锁及完整战局。操作后合并自动保存，战局每五秒保存；暂停、返回地图和关闭也会保存。重新打开后选读档可继续战局。存档界面删档需二次确认。不要堆叠主道具；丢弃道具会失去其中存档。\n\n玩法与素材均为本机运行，无需外部素材包或 Musician。原生音效可关闭。进入 WoW 战斗或副本时由引擎关闭并尝试保存。\n\n当前为离线验证候选，目标 WoW 客户端中的导入、视觉、音效及重载持久化仍需验收。",
+  "packages": [
+    "world",
+    "audio"
+  ],
+  "build": {
+    "profile": "release",
+    "budgets": {
+      "sourceBytes": 180000,
+      "exportCharacters": 80000
+    }
+  }
+}

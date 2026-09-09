@@ -2,3 +2,4 @@
 *.lua text eol=lf whitespace=-trailing-space
 *.md text eol=lf
 *.docx binary
+*.t3e.txt text eol=lf

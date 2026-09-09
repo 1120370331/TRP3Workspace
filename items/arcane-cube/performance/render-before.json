@@ -1,0 +1,105 @@
+{
+  "environment": "Lua 5.1 mock host; CPU comparison, not WoW FPS",
+  "scenarios": [
+    {
+      "order": 3,
+      "projectMeanMs": 5.233333333333334,
+      "drawMeanMs": 1.3333333333333326,
+      "combinedP95Ms": 10.000000000000007,
+      "setterCalls": 72843,
+      "resources": {
+        "emitters3D": 0,
+        "particles3D": 0,
+        "particles3DCapacity": 1536,
+        "particles3DDropped": 0,
+        "particles3DEvicted": 0,
+        "particles3DPeak": 0,
+        "particles3DPooled": 0,
+        "particles3DRenderDropped": 0,
+        "particles3DSpawned": 0,
+        "particles3DVisible": 0,
+        "scene3DDraws": 159,
+        "scene3DDropped": 0,
+        "scene3DFaces": 318,
+        "scene3DNodes": 27,
+        "scene3DPooledQuads": 159,
+        "scene3DVisibleFaces": 159
+      }
+    },
+    {
+      "order": 4,
+      "projectMeanMs": 10.433333333333325,
+      "drawMeanMs": 2.033333333333346,
+      "combinedP95Ms": 16.000000000000014,
+      "setterCalls": 144347,
+      "resources": {
+        "emitters3D": 0,
+        "particles3D": 0,
+        "particles3DCapacity": 1536,
+        "particles3DDropped": 0,
+        "particles3DEvicted": 0,
+        "particles3DPeak": 0,
+        "particles3DPooled": 0,
+        "particles3DRenderDropped": 0,
+        "particles3DSpawned": 0,
+        "particles3DVisible": 0,
+        "scene3DDraws": 312,
+        "scene3DDropped": 0,
+        "scene3DFaces": 624,
+        "scene3DNodes": 57,
+        "scene3DPooledQuads": 312,
+        "scene3DVisibleFaces": 312
+      }
+    },
+    {
+      "order": 5,
+      "projectMeanMs": 18.566666666666674,
+      "drawMeanMs": 3.499999999999992,
+      "combinedP95Ms": 27.000000000000135,
+      "setterCalls": 241285,
+      "resources": {
+        "emitters3D": 0,
+        "particles3D": 0,
+        "particles3DCapacity": 1536,
+        "particles3DDropped": 0,
+        "particles3DEvicted": 0,
+        "particles3DPeak": 0,
+        "particles3DPooled": 0,
+        "particles3DRenderDropped": 0,
+        "particles3DSpawned": 0,
+        "particles3DVisible": 0,
+        "scene3DDraws": 519,
+        "scene3DDropped": 0,
+        "scene3DFaces": 1038,
+        "scene3DNodes": 99,
+        "scene3DPooledQuads": 519,
+        "scene3DVisibleFaces": 519
+      }
+    },
+    {
+      "order": 7,
+      "projectMeanMs": 55.266666666666694,
+      "drawMeanMs": 10.699999999999976,
+      "combinedP95Ms": 103.0000000000002,
+      "setterCalls": 511372,
+      "resources": {
+        "emitters3D": 0,
+        "particles3D": 0,
+        "particles3DCapacity": 1536,
+        "particles3DDropped": 0,
+        "particles3DEvicted": 0,
+        "particles3DPeak": 0,
+        "particles3DPooled": 0,
+        "particles3DRenderDropped": 0,
+        "particles3DSpawned": 0,
+        "particles3DVisible": 0,
+        "scene3DDraws": 1095,
+        "scene3DDropped": 0,
+        "scene3DFaces": 2190,
+        "scene3DNodes": 219,
+        "scene3DPooledQuads": 1095,
+        "scene3DVisibleFaces": 1095
+      }
+    }
+  ]
+}

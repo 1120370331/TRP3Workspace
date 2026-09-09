@@ -1,0 +1,23 @@
+{
+  "modelKey": "abomination",
+  "creatureDisplayID": 28449,
+  "creatureModelDataID": 156,
+  "modelFileID": 123961,
+  "modelPath": "Creature/FleshGolem/FleshGolem.m2",
+  "textureFiles": {
+    "11": 123962,
+    "12": 123963
+  },
+  "texturePaths": {
+    "123962": "Creature/FleshGolem/FLESHGOLEMSKIN1.BLP",
+    "123963": "Creature/FleshGolem/FLESHGOLEMSKIN2.BLP"
+  },
+  "displayScale": 1,
+  "sourceBuild": "12.1.0.69587",
+  "modelDataSource": "https://wago.tools/db2/CreatureModelData/csv?build=12.1.0.69587",
+  "displayInfoSource": "https://wago.tools/db2/CreatureDisplayInfo/csv?build=12.1.0.69587",
+  "modelMetadataSource": "https://wow.zamimg.com/modelviewer/live/meta/npc/28449.json",
+  "listfileSource": "https://github.com/wowdev/wow-listfile/blob/master/parts/creature.csv",
+  "checkedAt": "2026-09-06",
+  "verifiedInClient": false
+}

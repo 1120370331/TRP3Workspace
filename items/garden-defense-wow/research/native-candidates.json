@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Bounded WoW-native Texture:SetTexture candidates for garden-defense-wow. Every entry is a FileDataID of a .blp path, not an icon name or a CreatureDisplayID.",
+  "source": {
+    "repository": "https://github.com/wowdev/wow-listfile",
+    "files": [
+      "parts/world.csv",
+      "parts/interface.csv",
+      "parts/misc.csv"
+    ],
+    "mappingFormat": "FileDataID;client path",
+    "caveat": "The community listfile proves the recorded ID/path mapping; it does not prove visual fit, tileability, alpha treatment, or availability in the target client branch."
+  },
+  "textures": {
+    "ground_elwynn_grass": {
+      "fileID": 187126,
+      "path": "TILESET/ELWYNN/ElwynnGrassBase.blp",
+      "role": "native terrain diffuse tile",
+      "textureUse": "terrain_tile",
+      "confidence": "verified_file_mapping_client_visuals_pending",
+      "source": "wowdev/wow-listfile parts/misc.csv"
+    },
+    "ground_dirt": {
+      "fileID": 187113,
+      "path": "TILESET/ELWYNN/ELWYNNDIRTBASE.BLP",
+      "role": "native terrain diffuse tile",
+      "textureUse": "terrain_tile",
+      "confidence": "verified_file_mapping_client_visuals_pending",
+      "source": "wowdev/wow-listfile parts/misc.csv"
+    },
+    "ground_elwynn_road": {
+      "fileID": 187099,
+      "path": "TILESET/ELWYNN/ElwynnCobbleStoneBase.blp",
+      "role": "native terrain diffuse tile",
+      "textureUse": "terrain_tile",
+      "confidence": "verified_file_mapping_client_visuals_pending",
+      "source": "wowdev/wow-listfile parts/misc.csv"
+    },
+    "ground_elwynn_wood": {
+      "fileID": 189607,
+      "path": "World/Azeroth/Elwynn/Buildings/BlackSmith/BlackSmithWood05.blp",
+      "role": "wood plank/trim candidate",
+      "textureUse": "direct",
+      "confidence": "high_mapping_medium_visual_fit"
+    },
+    "ui_wood_border": {
+      "fileID": 130672,
+      "path": "Interface/ACHIEVEMENTFRAME/UI-Achievement-WoodBorder.blp",
+      "role": "wood UI frame overlay",
+      "textureUse": "direct_but_frame_not_fill",
+      "confidence": "high_mapping_high_UI_intent"
+    },
+    "ui_stone_frame": {
+      "fileID": 457323,
+      "path": "Interface/UNITPOWERBARALT/StoneTan_Horizontal_Frame.blp",
+      "role": "stone UI frame overlay",
+      "textureUse": "direct_but_frame_not_fill",
+      "confidence": "high_mapping_high_UI_intent"
+    },
+    "ui_leather_background": {
+      "fileID": 4619890,
+      "path": "Interface/QuestFrame/QuestBackgroundProfessionLeatherworking.BLP",
+      "role": "leather-themed UI background",
+      "textureUse": "direct",
+      "confidence": "high_mapping_high_UI_intent"
+    },
+    "icon_shovel": {
+      "fileID": 134435,
+      "path": "Interface/ICONS/INV_Misc_Shovel_01.blp",
+      "role": "shovel removal tool",
+      "textureUse": "direct_icon",
+      "confidence": "high_mapping_high_semantic_fit"
+    },
+    "icon_lawn_mower_substitute": {
+      "fileID": 133013,
+      "path": "Interface/ICONS/INV_Gizmo_GnomishFlameTurret.blp",
+      "role": "mechanical emergency-defense substitute; not a literal lawn mower",
+      "textureUse": "direct_icon",
+      "confidence": "high_mapping_low_semantic_fit"
+    },
+    "icon_seed_bag": {
+      "fileID": 133668,
+      "path": "Interface/ICONS/INV_Misc_Bag_HerbPouch.blp",
+      "role": "seed-bag/card-back substitute",
+      "textureUse": "direct_icon",
+      "confidence": "high_mapping_medium_semantic_fit"
+    },
+    "icon_farm_seed": {
+      "fileID": 656440,
+      "path": "Interface/ICONS/Inv_Farm_HerbSeed.blp",
+      "role": "seed packet/card icon",
+      "textureUse": "direct_icon",
+      "confidence": "high_mapping_high_semantic_fit"
+    },
+    "icon_sun": {
+      "fileID": 134909,
+      "path": "Interface/ICONS/INV_QirajIdol_Sun.blp",
+      "role": "sun resource substitute",
+      "textureUse": "direct_icon",
+      "confidence": "high_mapping_medium_semantic_fit"
+    },
+    "icon_sun_alt": {
+      "fileID": 135828,
+      "path": "Interface/ICONS/Spell_Fire_SunKey.blp",
+      "role": "sun resource alternate",
+      "textureUse": "direct_icon",
+      "confidence": "high_mapping_medium_semantic_fit"
+    },
+    "icon_wall_nut_substitute": {
+      "fileID": 134057,
+      "path": "Interface/ICONS/INV_Misc_Food_PineNut.blp",
+      "role": "wall-nut card substitute",
+      "textureUse": "direct_icon",
+      "confidence": "high_mapping_medium_semantic_fit"
+    },
+    "icon_stone": {
+      "fileID": 135227,
+      "path": "Interface/ICONS/INV_Stone_01.blp",
+      "role": "stone UI/decorative fallback",
+      "textureUse": "direct_icon",
+      "confidence": "high_mapping_high_semantic_fit"
+    }
+  },
+  "notSelected": [
+    {
+      "fileID": 132022,
+      "path": "Interface/Glues/Models/UI_RS_Tauren/Leather_D_03Brown copy.blp",
+      "reason": "A raw model skin, not a UI background; keep it out of Texture UI candidates despite being a BLP."
+    }
+  ],
+  "terrainSearch": {
+    "result": "verified_in_parts_misc_csv",
+    "verifiedPaths": [
+      {
+        "fileID": 187126,
+        "path": "TILESET/ELWYNN/ElwynnGrassBase.blp"
+      },
+      {
+        "fileID": 187113,
+        "path": "TILESET/ELWYNN/ELWYNNDIRTBASE.BLP"
+      },
+      {
+        "fileID": 187099,
+        "path": "TILESET/ELWYNN/ElwynnCobbleStoneBase.blp"
+      }
+    ],
+    "note": "Use diffuse BLP entries, not _s specular maps, .meta files or doodad detail grass."
+  },
+  "models": {
+    "newModelOrDisplayCandidates": [
+      {
+        "kind": "fileID",
+        "fileID": 122899,
+        "path": "Creature/AncientProtector/AncientProtector.M2",
+        "role": "wall-nut defensive tree/ancient substitute",
+        "source": "wowdev/wow-listfile parts/creature.csv",
+        "confidence": "high_mapping_medium_role_fit"
+      },
+      {
+        "kind": "fileID",
+        "fileID": 124235,
+        "path": "Creature/GOLEMHARVEST/GolemHarvest.M2",
+        "role": "lawn-mower emergency-defense harvest-golem substitute",
+        "source": "wowdev/wow-listfile parts/creature.csv",
+        "confidence": "high_mapping_high_role_fit"
+      },
+      {
+        "kind": "fileID",
+        "fileID": 123961,
+        "path": "Creature/FleshGolem/FleshGolem.m2",
+        "role": "classic Warcraft abomination model for the abomination enemy",
+        "source": "wowdev/wow-listfile parts/creature.csv",
+        "confidence": "high_mapping_high_role_fit_client_skin_pending"
+      },
+      {
+        "kind": "fileID",
+        "fileID": 3482565,
+        "path": "creature/lich2/lich2.m2",
+        "role": "distinct modern lich model for the Scourge necromancer enemy",
+        "source": "wowdev/wow-listfile parts/creature.csv",
+        "confidence": "high_mapping_high_role_fit_client_skin_pending"
+      }
+    ],
+    "reuseOnly": [
+      {
+        "fileID": 124753,
+        "path": "creature/lasher/lasher.m2",
+        "from": "items/garden-defense/research/assets-candidates.json"
+      },
+      {
+        "fileID": 124765,
+        "path": "creature/lasherorchid/lasherorchid.m2",
+        "from": "items/garden-defense/research/assets-candidates.json"
+      },
+      {
+        "fileID": 126570,
+        "path": "creature/zombie/zombie.m2",
+        "from": "items/garden-defense/research/assets-candidates.json"
+      }
+    ],
+    "displayIDNote": "No CreatureDisplayID is emitted: this bounded search verified FileDataID/path mappings only and did not obtain an authoritative CreatureDisplayInfo table."
+  }
+}

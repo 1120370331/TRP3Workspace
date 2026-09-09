@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "apiSource": "https://github.com/Gethe/wow-ui-source/blob/live/Interface/AddOns/Blizzard_APIDocumentationGenerated/PetJournalInfoDocumentation.lua",
+  "resolution": "C_PetJournal.GetDisplayIDByIndex(speciesID,1), else GetPetInfoTableBySpeciesID(speciesID).displayID; never creatureID",
+  "candidates": [
+    {
+      "key": "pea",
+      "petSpeciesID": 1932,
+      "label": "Dreamgrove lasher",
+      "creatureID_NOT_displayID": 112798,
+      "iconFileID": 959797,
+      "description": "A lasher by any other name would smell as sweet.",
+      "sourceText": "|cFFFFD200Order Hall:|r The Dreamgrove",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "sunflower",
+      "petSpeciesID": 291,
+      "label": "Brazie's Sunflower",
+      "creatureID_NOT_displayID": 51090,
+      "iconFileID": 133939,
+      "description": "This sweet flower will brighten your day with its warm smile and cheerful song! Also strong against undead.",
+      "sourceText": "|cFFFFD200Quest:|r Lawn of the Dead|n|cFFFFD200Zone:|r Hillsbrad Foothills|n",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "cherry",
+      "petSpeciesID": 85,
+      "label": "Pet Bombling",
+      "creatureID_NOT_displayID": 9656,
+      "iconFileID": 133712,
+      "description": "Possibly explosive, definitely adorable. Keep away from open flame.",
+      "sourceText": "|cFFFFD200Profession: |rEngineering",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "wall",
+      "petSpeciesID": 460,
+      "label": "Ruby Sapling",
+      "creatureID_NOT_displayID": 62020,
+      "iconFileID": 132129,
+      "description": "Small elemental saplings grow into treants, fierce defenders of forests and groves.",
+      "sourceText": "|cFFFFD200Pet Battle: |rEversong Woods (Burning Crusade)",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "mine",
+      "petSpeciesID": 1322,
+      "label": "Blackfuse Bombling",
+      "creatureID_NOT_displayID": 73352,
+      "iconFileID": 897633,
+      "description": "The first bombling created in the Underhold, Siegecrafter Blackfuse couldn't bear to see it destroyed, and kept it as a friendly, if explosive, pet.",
+      "sourceText": "|cFFFFD200Drop:|r Siegecrafter Blackfuse|n|cFFFFD200Raid:|r Siege of Orgrimmar",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "snow",
+      "petSpeciesID": 253,
+      "label": "Frigid Frostling",
+      "creatureID_NOT_displayID": 40198,
+      "iconFileID": 135851,
+      "description": "While not nearly as destructive as its original master, the Ice Lord Ahune, the frostling has been known to lob chilly snowballs at unsuspecting adventurers.",
+      "sourceText": "|cFFFFD200World Event:|r Midsummer Fire Festival",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "chomper",
+      "petSpeciesID": 162,
+      "label": "Sinister Squashling",
+      "creatureID_NOT_displayID": 23909,
+      "iconFileID": 134015,
+      "description": "This mischievous gourd likes to pop out of the ground and scare you right out of your pants. Hail to the pumpkin song!",
+      "sourceText": "|cFFFFD200World Event:|r Hallow's End",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "repeater",
+      "petSpeciesID": 318,
+      "label": "Crimson Lasher",
+      "creatureID_NOT_displayID": 53661,
+      "iconFileID": 133941,
+      "description": "Native to the ashen soils of the Firelands, the lasher was transplanted to Azeroth with the help of the Guardians of Hyjal.",
+      "sourceText": "|cFFFFD200Vendor: |rAyla Shadowstorm|n|cFFFFD200Zone: |rMolten Front|n|cFFFFD200Cost: |r1500|TINTERFACE\\MONEYFRAME\\UI-GOLDICON.BLP:0|t",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "puff",
+      "petSpeciesID": 1539,
+      "label": "Zangar Spore",
+      "creatureID_NOT_displayID": 86718,
+      "iconFileID": 463281,
+      "description": "A spore from Zangarra, a central area of the Zangar encroachment that would later bloom into the Zangarmarsh.",
+      "sourceText": "|cFFFFD200Drop:|r Fel-Touched Pet Supplies|n|cFFFFD200Zone:|r Tanaan Jungle|n",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "sunshroom",
+      "petSpeciesID": 1540,
+      "label": "Brilliant Spore",
+      "creatureID_NOT_displayID": 86719,
+      "iconFileID": 132851,
+      "description": "Brilliant spores are very rarely seen, found deep under the waves of Draenor within the darkest corners of the Zangar fungal encroachment.",
+      "sourceText": "|cFFFFD200Drop:|r Rotcap|n|cFFFFD200Zone:|r Spires of Arak",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "zombie",
+      "petSpeciesID": 1967,
+      "label": "Ghoulish Minion",
+      "creatureID_NOT_displayID": 115150,
+      "iconFileID": 1100170,
+      "description": "One of innumerable ghouls summoned by the Lich King in his final battle, left to roam the world for eternity.",
+      "sourceText": "|cFFFFD200Drop: |rThe Lich King|n|cFFFFD200Zone: |rIcecrown Citadel",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "mower",
+      "petSpeciesID": 338,
+      "label": "Darkmoon Tonk",
+      "creatureID_NOT_displayID": 55356,
+      "iconFileID": 133015,
+      "description": "A favorite of children across Azeroth, this tough little toy can withstand even the most aggressive imagination.",
+      "sourceText": "|cFFFFD200Vendor: |rLhara|n|cFFFFD200Zone: |rDarkmoon Island|n|cFFFFD200Cost: |r90|TINTERFACE\\ICONS\\inv_misc_ticket_darkmoon_01:0|t ",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "bucket_zombie",
+      "petSpeciesID": 2962,
+      "label": "Stitched undead companion",
+      "creatureID_NOT_displayID": 172151,
+      "iconFileID": 3622122,
+      "description": "If you can beat them, stitch them!",
+      "sourceText": "|cFFFFD200Vendor: |rNalcorn Talsen|n|cFFFFD200Zone: |rMaldraxxus|n|cFFFFD200Faction: |rThe Undying Army - Revered|n|cFFFFD200Cost: |r1765|TINTERFACE\\MONEYFRAME\\UI-GOLDICON.BLP:0|t",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "paper_zombie",
+      "petSpeciesID": 249,
+      "label": "Lil' K.T.",
+      "creatureID_NOT_displayID": 36979,
+      "iconFileID": 254094,
+      "description": "In life, Kel'Thuzad betrayed the Kirin Tor and created the Cult of the Damned. In death, he serves the Scourge as the Archlich Lord of Naxxramas.",
+      "sourceText": "|cFFFFD200In-Game Shop|r",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    },
+    {
+      "key": "pole_zombie",
+      "petSpeciesID": 3046,
+      "label": "Putrid Geist",
+      "creatureID_NOT_displayID": 174181,
+      "iconFileID": 336781,
+      "description": "Despite being decrepit and undead, geists move with exceptional speed and agility.",
+      "sourceText": "|cFFFFD200World Event: |rShadowlands Scourge Invasion|n|cFFFFD200Cost: |r20|Hcurrency:1754|h|TInterface\\ICONS\\Achievement_Reputation_ArgentCrusader.blp:0|t|h",
+      "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv"
+    }
+  ],
+  "sourceData": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+  "inClientVerified": false
+}

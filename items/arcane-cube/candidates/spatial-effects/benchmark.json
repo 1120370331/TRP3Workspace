@@ -1,0 +1,49 @@
+{
+  "environment": "Lua 5.1; no WoW host, native layout or GPU timing",
+  "baseline": "items\\arcane-cube\\candidates\\native-batched-skin\\engine.generated.lua",
+  "frames": 60,
+  "warmupFrames": 6,
+  "versions": {
+    "before": {
+      "sourceHashes": {
+        "scene3d": "ae2b4fa57851a1448f9fcddb31456c44333d934b91b114f7d9e2cc074819396d",
+        "particles3d": "ad0e7930f59977305645cd145a202cdee96a4fd2a83e0d71512af2b901c17394"
+      },
+      "cameraAndModelMotion": {
+        "meanMs": 15.444444444444445,
+        "p95Ms": 20.000000000000018,
+        "trajectoryHash": "9b0055c979520133d133297d240351ae8d882e43ee311724279eee9bbaeea5e0",
+        "transformedSkinVertices": 737280,
+        "projectedNodes": 1920
+      },
+      "saturatedSpawns": {
+        "meanMs": 22.14814814814815,
+        "p95Ms": 26.00000000000002,
+        "trajectoryHash": "008f7824f77389c963be6e82401d084d8cbbcc71c5c9fbd32c91fd93e3aa0e1d",
+        "transformedSkinVertices": 0,
+        "projectedNodes": 0
+      }
+    },
+    "after": {
+      "sourceHashes": {
+        "scene3d": "44dbdf2b09bbb53dafece1c73da13fb0bb2acb05ec50d1d80f5680be2c8cb4f8",
+        "particles3d": "de682bf6d0d18f33370984a70f229c9d572a9c66e32105047315adbbce001b11"
+      },
+      "cameraAndModelMotion": {
+        "meanMs": 1.6481481481481393,
+        "p95Ms": 6.999999999999673,
+        "trajectoryHash": "9b0055c979520133d133297d240351ae8d882e43ee311724279eee9bbaeea5e0",
+        "transformedSkinVertices": 56832,
+        "projectedNodes": 148
+      },
+      "saturatedSpawns": {
+        "meanMs": 0.3703703703703707,
+        "p95Ms": 1.000000000000334,
+        "trajectoryHash": "008f7824f77389c963be6e82401d084d8cbbcc71c5c9fbd32c91fd93e3aa0e1d",
+        "transformedSkinVertices": 0,
+        "projectedNodes": 0
+      }
+    }
+  },
+  "sameOutput": true
+}

@@ -1,0 +1,2397 @@
+{
+  "simulationHz": 30,
+  "presentation": "game",
+  "viewport": {
+    "width": 960,
+    "height": 600
+  },
+  "limits": {
+    "maxEntities": 256,
+    "maxSoundVoices": 16,
+    "maxSurfaceModels": 104,
+    "maxParticles": 192,
+    "maxEmitters": 16,
+    "maxParticleSpawnsPerStep": 96
+  },
+  "controls": {},
+  "prefabs": {},
+  "actions": {},
+  "levels": {
+    "lawn_day": {
+      "terrain": []
+    },
+    "lawn_night": {
+      "terrain": []
+    }
+  },
+  "assets": {
+    "models": {
+      "pea": {
+        "kind": "petSpeciesID",
+        "id": 1932,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Dreamgrove lasher",
+        "fallback": "pet_pea",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 106,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.55,
+        "screenFacing": "right",
+        "forwardYaw": 0
+      },
+      "sunflower": {
+        "kind": "petSpeciesID",
+        "id": 291,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Brazie's Sunflower",
+        "fallback": "pet_sunflower",
+        "scale": 0.85,
+        "distance": 0.8,
+        "facing": 3.141592653589793,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 90,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.55
+      },
+      "cherry": {
+        "kind": "petSpeciesID",
+        "id": 85,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Pet Bombling",
+        "fallback": "pet_cherry",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 82,
+          "height": 86
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "right",
+        "forwardYaw": 0
+      },
+      "wall": {
+        "kind": "petSpeciesID",
+        "id": 460,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Ruby Sapling",
+        "fallback": "pet_wall",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 109,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.85,
+        "screenFacing": "right",
+        "forwardYaw": 0
+      },
+      "mine": {
+        "kind": "petSpeciesID",
+        "id": 1322,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Blackfuse Bombling",
+        "fallback": "pet_mine",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 82,
+          "height": 72
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "right",
+        "forwardYaw": 0
+      },
+      "snow": {
+        "kind": "petSpeciesID",
+        "id": 253,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Frigid Frostling",
+        "fallback": "pet_snow",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 92,
+          "height": 84
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "description": "While not nearly as destructive as its original master, the Ice Lord Ahune, the frostling has been known to lob chilly snowballs at unsuspecting adventurers.",
+        "screenFacing": "right",
+        "forwardYaw": 0
+      },
+      "chomper": {
+        "kind": "petSpeciesID",
+        "id": 162,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Sinister Squashling",
+        "fallback": "pet_chomper",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 108,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "right",
+        "forwardYaw": 0
+      },
+      "repeater": {
+        "kind": "petSpeciesID",
+        "id": 318,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Crimson Lasher",
+        "fallback": "pet_repeater",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 109,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.55,
+        "screenFacing": "right",
+        "forwardYaw": 0
+      },
+      "puff": {
+        "kind": "petSpeciesID",
+        "id": 1539,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Zangar Spore",
+        "fallback": "pet_puff",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 76,
+          "height": 72
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "right",
+        "forwardYaw": 0
+      },
+      "sunshroom": {
+        "kind": "petSpeciesID",
+        "id": 1540,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Brilliant Spore",
+        "fallback": "pet_sunshroom",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 80,
+          "height": 86
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "right",
+        "forwardYaw": 0
+      },
+      "zombie": {
+        "kind": "petSpeciesID",
+        "id": 1967,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Ghoulish Minion",
+        "fallback": "pet_zombie",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": -1.5707963267948966,
+        "animation": 4,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 94,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "left",
+        "forwardYaw": 0
+      },
+      "mower": {
+        "kind": "petSpeciesID",
+        "id": 338,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Darkmoon Tonk",
+        "fallback": "pet_mower",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": 1.5707963267948966,
+        "animation": 0,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 78,
+          "height": 72
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "right",
+        "forwardYaw": 3.141592653589793
+      },
+      "bucket_zombie": {
+        "kind": "petSpeciesID",
+        "id": 2962,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Stitched undead companion",
+        "fallback": "pet_bucket_zombie",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": -1.5707963267948966,
+        "animation": 4,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 106,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.85,
+        "description": "If you can beat them, stitch them!",
+        "screenFacing": "left",
+        "forwardYaw": 0
+      },
+      "paper_zombie": {
+        "kind": "petSpeciesID",
+        "id": 249,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Lil' K.T.",
+        "fallback": "pet_paper_zombie",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": -1.5707963267948966,
+        "animation": 4,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 108,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "left",
+        "forwardYaw": 0
+      },
+      "pole_zombie": {
+        "kind": "petSpeciesID",
+        "id": 3046,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "name": "Putrid Geist",
+        "fallback": "pet_pole_zombie",
+        "scale": 0.85,
+        "distance": 0.8,
+        "facing": -1.5707963267948966,
+        "animation": 4,
+        "displayIndex": 1,
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 100,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "left",
+        "forwardYaw": 0
+      },
+      "abomination": {
+        "kind": "creatureDisplayID",
+        "id": 28449,
+        "fallback": "pet_abomination",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": -1.5707963267948966,
+        "animation": 4,
+        "source": "wago.tools CreatureModelData/CreatureDisplayInfo 12.1.0.69587 and Wowhead modelviewer metadata",
+        "path": "Creature/FleshGolem/FleshGolem.m2",
+        "description": "Full classic abomination display: FleshGolem M2 123961 with texture variations 123962 and 123963.",
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 109,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.85,
+        "screenFacing": "left",
+        "forwardYaw": 0
+      },
+      "necromancer": {
+        "kind": "creatureDisplayID",
+        "id": 96088,
+        "fallback": "pet_necromancer",
+        "scale": 1,
+        "distance": 0.8,
+        "facing": -1.5707963267948966,
+        "animation": 4,
+        "source": "https://www.wowhead.com/npc=162309/kultharok",
+        "path": "creature/lich2/lich2.m2",
+        "description": "Full Kul'tharok display: lich2 M2 3482565 with skin texture 3482595 and creature geosets. Separate from the Lil' K.T. model used by the frenzied acolyte.",
+        "fitToBounds": true,
+        "fitFill": 1,
+        "render": {
+          "width": 109,
+          "height": 88
+        },
+        "fallbackMode": "model",
+        "fallbackDistance": 0.65,
+        "screenFacing": "left",
+        "forwardYaw": 0
+      }
+    },
+    "textures": {
+      "ground_elwynn_grass": {
+        "kind": "fileID",
+        "id": 187126,
+        "path": "TILESET/ELWYNN/ElwynnGrassBase.blp",
+        "source": "https://github.com/wowdev/wow-listfile/blob/master/parts/misc.csv",
+        "verifiedInClient": false
+      },
+      "ground_dirt": {
+        "kind": "fileID",
+        "id": 187113,
+        "path": "TILESET/ELWYNN/ELWYNNDIRTBASE.BLP",
+        "source": "https://github.com/wowdev/wow-listfile/blob/master/parts/misc.csv",
+        "verifiedInClient": false
+      },
+      "ground_elwynn_road": {
+        "kind": "fileID",
+        "id": 187099,
+        "path": "TILESET/ELWYNN/ElwynnCobbleStoneBase.blp",
+        "source": "https://github.com/wowdev/wow-listfile/blob/master/parts/misc.csv",
+        "verifiedInClient": false
+      },
+      "ground_elwynn_wood": {
+        "kind": "fileID",
+        "id": 189607,
+        "path": "World/Azeroth/Elwynn/Buildings/BlackSmith/BlackSmithWood05.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "ui_wood_border": {
+        "kind": "fileID",
+        "id": 130672,
+        "path": "Interface/ACHIEVEMENTFRAME/UI-Achievement-WoodBorder.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "ui_stone_frame": {
+        "kind": "fileID",
+        "id": 457323,
+        "path": "Interface/UNITPOWERBARALT/StoneTan_Horizontal_Frame.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "ui_leather_background": {
+        "kind": "fileID",
+        "id": 4619890,
+        "path": "Interface/QuestFrame/QuestBackgroundProfessionLeatherworking.BLP",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "ui_parchment_grain": {
+        "kind": "atlas",
+        "atlas": "QuestBG-Parchment",
+        "fallbackPath": "Interface\\Buttons\\WHITE8X8",
+        "source": "Blizzard_UIPanels_Game/Mainline/QuestFrameTemplates.xml: native QuestBG-Parchment atlas with client-provided UV bounds"
+      },
+      "icon_shovel": {
+        "kind": "fileID",
+        "id": 134435,
+        "path": "Interface/ICONS/INV_Misc_Shovel_01.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "icon_lawn_mower_substitute": {
+        "kind": "fileID",
+        "id": 133013,
+        "path": "Interface/ICONS/INV_Gizmo_GnomishFlameTurret.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "icon_seed_bag": {
+        "kind": "fileID",
+        "id": 133668,
+        "path": "Interface/ICONS/INV_Misc_Bag_HerbPouch.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "icon_farm_seed": {
+        "kind": "fileID",
+        "id": 656440,
+        "path": "Interface/ICONS/Inv_Farm_HerbSeed.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "icon_sun": {
+        "kind": "fileID",
+        "id": 134909,
+        "path": "Interface/ICONS/INV_QirajIdol_Sun.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "icon_sun_alt": {
+        "kind": "fileID",
+        "id": 135828,
+        "path": "Interface/ICONS/Spell_Fire_SunKey.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "icon_wall_nut_substitute": {
+        "kind": "fileID",
+        "id": 134057,
+        "path": "Interface/ICONS/INV_Misc_Food_PineNut.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "icon_stone": {
+        "kind": "fileID",
+        "id": 135227,
+        "path": "Interface/ICONS/INV_Stone_01.blp",
+        "source": "wowdev/wow-listfile",
+        "verifiedInClient": false
+      },
+      "icon_pea": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\Spell_Nature_CorrosiveBreath",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_sunflower": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Misc_Flower_02",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_cherry": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Misc_Bomb_04",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_mine": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Misc_Bomb_09",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_snow": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\Spell_Frost_FrostBolt02",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_chomper": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\Ability_Druid_FerociousBite",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_repeater": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\Ability_Hunter_Quickshot",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_puff": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Mushroom_01",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_sunshroom": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Mushroom_02",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_basic": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\Spell_Shadow_RaiseDead",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_cone": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Helmet_31",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_bucket": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Helmet_03",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_pole": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Staff_08",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_paper": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Scroll_03",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_flag": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_BannerPVP_02",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_coin": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Misc_Coin_01",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_pause": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\Spell_Holy_SealOfProtection",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_map": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Misc_Map_01",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_sound": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Misc_Horn_01",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_help": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Misc_Book_09",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_save": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Misc_Book_11",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "icon_profiles": {
+        "kind": "texturePath",
+        "path": "Interface\\Icons\\INV_Misc_Note_01",
+        "source": "WoW built-in icon path; falls back if unavailable"
+      },
+      "orb": {
+        "kind": "texturePath",
+        "path": "Interface\\Cooldown\\star4"
+      },
+      "fx_soft": {"kind":"fileID","id":130871,"maskPath":"Interface\\CHARACTERFRAME\\TempPortraitAlphaMask","source":"WoW WHITE8X8 + native circular alpha mask; tintable debris/mist"},
+      "fx_ring": {"kind":"fileID","id":130728,"source":"wowdev/wow-listfile Interface/BUTTONS/IconBorder-GlowRing.blp"},
+      "fx_crystal": {"kind":"fileID","id":130871,"source":"WHITE8X8 deformed into two triangular facets by native Texture vertices"},
+      "portrait_ring": {
+        "kind": "texturePath",
+        "path": "Interface\\Minimap\\MiniMap-TrackingBorder"
+      },
+      "parchment": {
+        "kind": "texturePath",
+        "path": "Interface\\QuestFrame\\QuestBG"
+      },
+      "action_border": {
+        "kind": "texturePath",
+        "path": "Interface\\Buttons\\UI-Quickslot2"
+      },
+      "pet_pea": {
+        "kind": "fileID",
+        "id": 959797,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 1932
+      },
+      "pet_sunflower": {
+        "kind": "fileID",
+        "id": 133939,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 291
+      },
+      "pet_cherry": {
+        "kind": "fileID",
+        "id": 133712,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 85
+      },
+      "pet_wall": {
+        "kind": "fileID",
+        "id": 132129,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 460
+      },
+      "pet_mine": {
+        "kind": "fileID",
+        "id": 897633,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 1322
+      },
+      "pet_snow": {
+        "kind": "fileID",
+        "id": 135851,
+        "speciesID": 253,
+        "source": "ATT BattlePetSpecies 12.1.0.69587 CSV"
+      },
+      "pet_chomper": {
+        "kind": "fileID",
+        "id": 134015,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 162
+      },
+      "pet_repeater": {
+        "kind": "fileID",
+        "id": 133941,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 318
+      },
+      "pet_puff": {
+        "kind": "fileID",
+        "id": 463281,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 1539
+      },
+      "pet_sunshroom": {
+        "kind": "fileID",
+        "id": 132851,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 1540
+      },
+      "pet_zombie": {
+        "kind": "fileID",
+        "id": 1100170,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 1967
+      },
+      "pet_mower": {
+        "kind": "fileID",
+        "id": 133015,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 338
+      },
+      "pet_bucket_zombie": {
+        "kind": "fileID",
+        "id": 3622122,
+        "speciesID": 2962,
+        "source": "ATT BattlePetSpecies 12.1.0.69587 CSV"
+      },
+      "pet_paper_zombie": {
+        "kind": "fileID",
+        "id": 254094,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 249
+      },
+      "pet_pole_zombie": {
+        "kind": "fileID",
+        "id": 336781,
+        "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.wago/12%20-%20Midnight/BattlePetSpecies.12.1.0.69587.csv",
+        "speciesID": 3046
+      },
+      "sun_disc": {
+        "kind": "fileID",
+        "id": 1029591,
+        "path": "Interface/ICONS/Ability_Skyreach_Solar_Burst.blp",
+        "source": "wowdev/wow-listfile parts/interface.csv"
+      },
+      "pet_abomination": {
+        "kind": "fileID",
+        "id": 3622122,
+        "speciesID": 3114,
+        "source": "ATT BattlePetSpecies 12.1.0.69587 CSV"
+      },
+      "pet_necromancer": {
+        "kind": "fileID",
+        "id": 254094,
+        "speciesID": 249,
+        "source": "ATT BattlePetSpecies 12.1.0.69587 CSV"
+      }
+    }
+  },
+  "sounds": {
+    "plant": {
+      "kind": "soundKitID",
+      "id": 44308,
+      "cooldown": 0.15,
+      "maxDuration": 2,
+      "channel": "SFX",
+      "baseVolume": 0.5,
+      "maxConcurrent": 2
+    },
+    "sun": {
+      "kind": "soundKitID",
+      "id": 120,
+      "channel": "Master",
+      "cooldown": 0.1,
+      "maxDuration": 2,
+      "priority": 3,
+      "source": "SOUNDKIT.LOOT_WINDOW_COIN_SOUND",
+      "baseVolume": 0.7,
+      "maxConcurrent": 2
+    },
+    "hit_nature": {
+      "kind": "fileID",
+      "id": 569707,
+      "cooldown": 0.12,
+      "maxDuration": 2,
+      "channel": "SFX",
+      "group": "impact_nature",
+      "fadeMs": 80,
+      "path": "Sound/SPELLS/SPELL_HU_CobraShot_Impact_01.ogg",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "volumeSoundKitID": 22889,
+      "baseVolume": 1,
+      "maxConcurrent": 2,
+      "bus": "impact"
+    },
+    "hit_frost": {
+      "kind": "fileID",
+      "id": 568542,
+      "cooldown": 0.18,
+      "maxDuration": 2,
+      "channel": "SFX",
+      "group": "impact_frost",
+      "fadeMs": 80,
+      "path": "Sound/SPELLS/BlizzardImpact1a.ogg",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "volumeSoundKitID": 7,
+      "baseVolume": 1,
+      "maxConcurrent": 2,
+      "bus": "impact"
+    },
+    "hit_spore": {
+      "kind": "fileID",
+      "id": 978341,
+      "cooldown": 0.18,
+      "maxDuration": 2,
+      "channel": "SFX",
+      "group": "impact_spore",
+      "fadeMs": 80,
+      "path": "Sound/SPELLS/SPELL_Podling_Poison_Impact_01.OGG",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "volumeSoundKitID": 41206,
+      "baseVolume": 1,
+      "maxConcurrent": 2,
+      "bus": "impact"
+    },
+    "hit_devour": {
+      "kind": "fileID",
+      "id": 1970170,
+      "cooldown": 0.3,
+      "maxDuration": 2,
+      "channel": "SFX",
+      "priority": 2,
+      "path": "sound/spells/spell_npc_bite_eat_plant_01.ogg",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "volumeSoundKitID": 103506,
+      "baseVolume": 1,
+      "maxConcurrent": 2,
+      "bus": "impact",
+      "group": "special"
+    },
+    "hit_shadow": {
+      "kind": "fileID",
+      "id": 568936,
+      "cooldown": 0.24,
+      "maxDuration": 2,
+      "channel": "SFX",
+      "group": "impact_shadow",
+      "fadeMs": 80,
+      "path": "Sound/SPELLS/SPELL_PR_ShadowOrb_Impact_02.ogg",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "volumeSoundKitID": 23249,
+      "baseVolume": 1,
+      "maxConcurrent": 1,
+      "bus": "impact"
+    },
+    "mower_hit": {
+      "kind": "fileID",
+      "id": 568580,
+      "cooldown": 0.25,
+      "maxDuration": 2,
+      "channel": "SFX",
+      "priority": 2,
+      "path": "Sound/SPELLS/FX_Crunch_Armor_Impact_03.ogg",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "volumeSoundKitID": 18085,
+      "baseVolume": 1,
+      "maxConcurrent": 2,
+      "bus": "impact",
+      "group": "special"
+    },
+    "explode": {
+      "kind": "fileID",
+      "id": 568528,
+      "cooldown": 0.5,
+      "maxDuration": 3,
+      "channel": "SFX",
+      "priority": 2,
+      "path": "Sound/SPELLS/SmallExplosions_Generic_01.ogg",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "volumeSoundKitID": 16418,
+      "baseVolume": 1,
+      "maxConcurrent": 2,
+      "bus": "impact",
+      "group": "special"
+    },
+    "wave": {
+      "kind": "soundKitID",
+      "id": 12867,
+      "cooldown": 2,
+      "maxDuration": 3,
+      "channel": "SFX",
+      "baseVolume": 0.7,
+      "maxConcurrent": 2
+    },
+    "win": {
+      "kind": "soundKitID",
+      "id": 43502,
+      "cooldown": 2,
+      "maxDuration": 5,
+      "channel": "SFX",
+      "baseVolume": 0.55,
+      "maxConcurrent": 2
+    },
+    "lose": {
+      "kind": "soundKitID",
+      "id": 43503,
+      "cooldown": 2,
+      "maxDuration": 3,
+      "channel": "SFX",
+      "baseVolume": 0.85,
+      "maxConcurrent": 2
+    },
+    "ui_click": {
+      "kind": "soundKitID",
+      "id": 852,
+      "channel": "Master",
+      "cooldown": 0.08,
+      "maxDuration": 2,
+      "priority": 2,
+      "source": "SOUNDKIT.IG_MAINMENU_OPTION",
+      "baseVolume": 0.75,
+      "maxConcurrent": 2
+    },
+    "ui_select": {
+      "kind": "soundKitID",
+      "id": 841,
+      "channel": "Master",
+      "cooldown": 0.08,
+      "maxDuration": 2,
+      "priority": 2,
+      "source": "SOUNDKIT.IG_CHARACTER_INFO_TAB",
+      "baseVolume": 0.75,
+      "maxConcurrent": 2
+    },
+    "ui_open": {
+      "kind": "soundKitID",
+      "id": 850,
+      "channel": "Master",
+      "cooldown": 0.08,
+      "maxDuration": 2,
+      "priority": 2,
+      "source": "SOUNDKIT.IG_MAINMENU_OPEN",
+      "baseVolume": 0.316228,
+      "maxConcurrent": 2
+    },
+    "vomit": {
+      "kind": "fileID",
+      "id": 567302,
+      "channel": "Master",
+      "cooldown": 0.8,
+      "maxDuration": 3.2,
+      "priority": 2,
+      "path": "Sound/event/EVENT_VashjirIntro_CaptVomitGoo_01.ogg",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "group": "elite",
+      "fadeMs": 150,
+      "volumeSoundKitID": 22028,
+      "baseVolume": 1,
+      "maxConcurrent": 1
+    },
+    "enemy_cast": {
+      "kind": "soundKitID",
+      "id": 97598,
+      "cooldown": 0.4,
+      "maxDuration": 2,
+      "channel": "SFX",
+      "group": "cast",
+      "fadeMs": 100,
+      "maxConcurrent": 1,
+      "baseVolume": 0.25
+    },
+    "enemy_bite_a": {
+      "kind": "fileID",
+      "id": 564214,
+      "channel": "Master",
+      "cooldown": 0.1,
+      "maxDuration": 2,
+      "priority": 1,
+      "path": "Sound/CREATURE/Wolf/BiteMediumA.ogg",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "group": "melee",
+      "fadeMs": 100,
+      "volumeSoundKitID": 3176,
+      "baseVolume": 1,
+      "maxConcurrent": 2,
+      "bus": "impact"
+    },
+    "enemy_bite_b": {
+      "kind": "fileID",
+      "id": 564220,
+      "channel": "Master",
+      "cooldown": 0.1,
+      "maxDuration": 2,
+      "priority": 1,
+      "path": "Sound/CREATURE/Wolf/BiteMediumB.ogg",
+      "source": "wowdev/wow-listfile parts/sound.csv",
+      "group": "melee",
+      "fadeMs": 100,
+      "volumeSoundKitID": 3176,
+      "baseVolume": 1,
+      "maxConcurrent": 2,
+      "bus": "impact"
+    }
+  },
+  "music": {
+    "menu": {
+      "title": "庭院选关",
+      "subtitle": "Kul Tiran High Seas A",
+      "nativeFileId": 1781897,
+      "volumeSoundKitID": 120160,
+      "baseVolume": 1,
+      "channel": "SFX",
+      "musicianTitle": "Plants Selection",
+      "musicianSource": "https://www.vgmusic.com/music/computer/microsoft/windows/",
+      "musicianAuthor": "Paul Soh",
+      "musicianCode": "TVVTOAAQUGxhbnRzIFNlbGVjdGlvbhAAAGQFAAEA/QACAMYxAwBAAAQA/QAFAMZHAAAMRwB4A0gAiQNHAJoDRgCrA0cAvQJMAM4MTwESDFIBVwxTAZs8RwM3DEcDrwNIA8ADRwPRA0YD4gNHA/MDTAQFDE8ESQxSBI4MUwTSPFMGbhRMBm4USAZuFFEHgAxUB8UFUwfnBksICSRRCAkkUwmlFFgJpRRPCaUUVwq3DFgK+wZaCx4GUgtAGFULQBhYC0AYVQwOGFQM2zBTDnckUQ+JDE8PzgZOD/AGRxASDEcQigNIEJsDRxCtAkYQvgJHEM8DTBDgDE8RJQxSEWkMUxGuPEcTSQxHE8EDSBPSA0cT4wNGE/UCRxQGAkwUFwxPFFsMUhSgDFMU5TxTFoAUTBaAFEgWgBRRF5IMVBfXBlMX+QZLGBskURgbJFMZtxRYGbcUTxm3FFcayQxYGw4GWhswBlIbUhhVG1IYWBtSGFUcIBhUHO4wUx6JJFEfmwxPH+AGTiACBkcgJQxHIJ0CSCCuAkcgvwNGINADRyDhA0wg8gxPITcMUiF7DFMhwDxHI1sMRyPTA0gj5QJHI/YCRiQHA0ckGANMJCkMTyRuDFIksgxTJPc8UyaSFEwmkhRIJpIUUSelDFQn6QZTKAsGSyguJFEoLiRTKckUWCnJFE8pyRRXKtsMWCsgBlorQgZSK2UYVStlGFgrZRhVLDIYVC0AMFMumyRRL64MTy/yBk4wFQVHMDcMRzCvA0gwwANHMNEDRjDiA0cw8wNMMQUMTzFJDFIxjgxTMdI8RzNuDEcz5gJIM/cDRzQIA0Y0GQNHNCoDTDQ7DE80gAxSNMUMUzUJPFM2pRRMNqUUSDalFFE3twxUN/sGUzgeBks4QCRROEAkUznbFFg52xRPOdsUVzruDFg7MgZaO1UFUjt3GFU7dxhYO3cYVTxFGFQ9EjBTPq4kUT/ADE9ABQVOQCcGR0BJDEdAwQNIQNIDR0DjA0ZA9QJHQQYCTEEXDE9BWwxSQaAMU0HlPEdDgAxHQ/gDSEQJA0dEGgNGRCsDR0Q9AkxETgxPRJIMUkTXDFNFGzxTRrcUTEa3FEhGtxRRR8kMVEgOBlNIMAZLSFIkUUhSJFNJ7hRYSe4UT0nuFFdLAAxYS0UFWktnBlJLiRhVS4kYWEuJGFVMVxhUTSUwU07AJFFP0gxPUBcGTlA5BkdQWwxHUNMDSFDlAkdQ9gJGUQcDR1EYA0xRKQxPUW4MUlGyDFNR9zxHU5IMR1QKA0hUGwNHVC0CRlQ+AkdUTwNMVGAMT1SlDFJU6QxTVS48U1bJFExWyRRIVskUUVfbDFRYIAZTWEIGS1hlJFFYZSRTWgAUWFoAFE9aABRXWxIMWFtXBlpbeQZSW5sYVVubGFhbmxhVXGkYNAAADzsAzg83AM4PLwGbDzsCaQ83AmkPNAM3DzsEBQ83BAUPLwTSDzsFoA83BaAPLQZuDzkHOw80BzsPMAc7Dy8ICQ87CNcPNgjXDzMI1w80CaUPQApyDzsKcg83CnIPNgtAD0IMDg89DA4POgwODzkM2w9ADakPPA2pDzsOdw9CD0UPPw9FDzQQEg87EOAPNxDgDy8Rrg87EnsPNxJ7DzQTSQ87FBcPNxQXDy8U5Q87FbIPNxWyDy0WgA85F04PNBdODzAXTg8vGBsPOxjpDzYY6Q8zGOkPNBm3D0AahQ87GoUPNxqFDzYbUg9CHCAPPRwgDzocIA85HO4PQB27Dzwduw87HokPQh9XDz8fVw80ICUPOyDyDzcg8g8vIcAPOyKODzcijg80I1sPOyQpDzckKQ8vJPcPOyXFDzclxQ8tJpIPOSdgDzQnYA8wJ2APLyguDzso+w82KPsPMyj7DzQpyQ9AKpcPOyqXDzcqlw82K2UPQiwyDz0sMg86LDIPOS0AD0Atzg88Lc4POy6bD0IvaQ8/L2kPNDA3DzsxBQ83MQUPLzHSDzsyoA83MqAPNDNuDzs0Ow83NDsPLzUJDzs11w83NdcPLTalDzk3cg80N3IPMDdyDy84QA87OQ4PNjkODzM5Dg80OdsPQDqpDzs6qQ83OqkPNjt3D0I8RQ89PEUPOjxFDzk9Eg9APeAPPD3gDzs+rg9CP3sPPz97DzRASQ87QRcPN0EXDy9B5Q87QrIPN0KyDzRDgA87RE4PN0RODy9FGw87RekPN0XpDy1Gtw85R4UPNEeFDzBHhQ8vSFIPO0kgDzZJIA8zSSAPNEnuD0BKuw87SrsPN0q7DzZLiQ9CTFcPPUxXDzpMVw85TSUPQE3yDzxN8g87TsAPQk+ODz9Pjg80UFsPO1EpDzdRKQ8vUfcPO1LFDzdSxQ80U5IPO1RgDzdUYA8vVS4PO1X7DzdV+w8tVskPOVeXDzRXlw8wV5cPL1hlDztZMg82WTIPM1kyDzRaAA9AWs4PO1rODzdazg82W5sPQlxpDz1caQ86XGkPRwAAbUwCaSRHAzdtTAWgJFMGbkhRCAk2Uwk+Ek8JpUhMC0BISAzbSEcOd0hHEBJtTBJ7JEcTSW1MFbIkUxaASFEYGzZTGVASTxm3SEwbUkhIHO5IRx6JSEcgJW1MIo4kRyNbbUwlxSRTJpJIUSguNlMpYhJPKclITCtlSEgtAEhHLptIRzA3bUwyoCRHM25tTDXXJFM2pUhROEA2Uzl1Ek8520hMO3dISD0SSEc+rkhHQEltTEKyJEdDgG1MRekkU0a3SFFIUjZTSYcST0nuSExLiUhITSVIR07ASEdQW21MUsUkR1OSbUxV+yRTVslIUVhlNlNZmRJPWgBITFubSEcAFwxHAI8DSACgA0cAsQNGAMIDRwDTA0wA5QxPASkMUgFuDFMBsjxHA04MRwPGAkgD1wNHA+gDRgP5A0cECgNMBBsMTwRgDFIEpQxTBOk8UwaFFEwGhRRIBoUUUQeXDFQH2wZTB/4GSwggJFEIICRTCbsUWAm7FE8JuxRXCs4MWAsSBloLNQVSC1cYVQtXGFgLVxhVDCUYVAzyMFMOjiRRD6AMTw/lBU4QBwZHECkMRxChA0gQsgNHEMMDRhDVAkcQ5gJMEPcMTxE7DFIRgAxTEcU8RxNgDEcT2ANIE+kDRxP6A0YUCwNHFB0CTBQuDE8UcgxSFLcMUxT7PFMWlxRMFpcUSBaXFFEXqQxUF+4GUxgQBksYMiRRGDIkUxnOFFgZzhRPGc4UVxrgDFgbJQVaG0cGUhtpGFUbaRhYG2kYVRw3GFQdBTBTHqAkUR+yDE8f9wZOIBkGRyA7DEcgswNIIMUCRyDWAkYg5wNHIPgDTCEJDE8hTgxSIZIMUyHXPEcjcgxHI+oDSCP7A0ckDQJGJB4CRyQvA0wkQAxPJIUMUiTJDFMlDjxTJqkUTCapFEgmqRRRJ7sMVCgABlMoIgZLKEUkUShFJFMp4BRYKeAUTyngFFcq8gxYKzcGWitZBlIrexhVK3sYWCt7GFUsSRhULRcwUy6yJFEvxQxPMAkGTjArBkcwTgxHMMYCSDDXA0cw6ANGMPkDRzEKA0wxGwxPMWAMUjGlDFMx6TxHM4UMRzP9Akg0DgJHNB8DRjQwA0c0QQNMNFIMTzSXDFI02wxTNSA8Uza7FEw2uxRINrsUUTfODFQ4EgZTODUFSzhXJFE4VyRTOfIUWDnyFE858hRXOwUMWDtJBlo7awZSO44YVTuOGFg7jhhVPFsYVD0pMFM+xSRRP9cMT0AbBk5APgZHQGAMR0DYA0hA6QNHQPoDRkELA0dBHQJMQS4MT0FyDFJBtwxTQfs8R0OXDEdEDwNIRCADR0QxA0ZEQgNHRFMDTERlDE9EqQxSRO4MU0UyPFNGzhRMRs4USEbOFFFH4AxUSCUFU0hHBktIaSRRSGkkU0oFFFhKBRRPSgUUV0sXDFhLWwZaS34GUkugGFVLoBhYS6AYVUxuGFRNOzBTTtckUU/pDE9QLgZOUFAGR1ByDEdQ6gNIUPsDR1ENAkZRHgJHUS8DTFFADE9RhQxSUckMU1IOPEdTqQxHVCEDSFQyA0dUQwNGVFUCR1RmAkxUdwxPVLsMUlUADFNVRTxTVuAUTFbgFEhW4BRRV/IMVFg3BlNYWQZLWHskUVh7JFNaFxRYWhcUT1oXFFdbKQxYW24GWluQBlJbshhVW7IYWFuyGFVcgBg0ABcPOwDlDzcA5Q8vAbIPOwKADzcCgA80A04POwQbDzcEGw8vBOkPOwW3DzcFtw8tBoUPOQdSDzQHUg8wB1IPLwggDzsI7g82CO4PMwjuDzQJuw9ACokPOwqJDzcKiQ82C1cPQgwlDz0MJQ86DCUPOQzyD0ANwA88DcAPOw6OD0IPWw8/D1sPNBApDzsQ9w83EPcPLxHFDzsSkg83EpIPNBNgDzsULg83FC4PLxT7DzsVyQ83FckPLRaXDzkXZQ80F2UPMBdlDy8YMg87GQAPNhkADzMZAA80Gc4PQBqbDzsamw83GpsPNhtpD0IcNw89HDcPOhw3DzkdBQ9AHdIPPB3SDzseoA9CH24PPx9uDzQgOw87IQkPNyEJDy8h1w87IqUPNyKlDzQjcg87JEAPNyRADy8lDg87JdsPNyXbDy0mqQ85J3cPNCd3DzAndw8vKEUPOykSDzYpEg8zKRIPNCngD0Aqrg87Kq4PNyquDzYrew9CLEkPPSxJDzosSQ85LRcPQC3lDzwt5Q87LrIPQi+ADz8vgA80ME4POzEbDzcxGw8vMekPOzK3Dzcytw80M4UPOzRSDzc0Ug8vNSAPOzXuDzc17g8tNrsPOTeJDzQ3iQ8wN4kPLzhXDzs5JQ82OSUPMzklDzQ58g9AOsAPOzrADzc6wA82O44PQjxbDz08Ww86PFsPOT0pD0A99w88PfcPOz7FD0I/kg8/P5IPNEBgDztBLg83QS4PL0H7DztCyQ83QskPNEOXDztEZQ83RGUPL0UyDztGAA83RgAPLUbODzlHmw80R5sPMEebDy9IaQ87STcPNkk3DzNJNw80SgUPQErSDztK0g83StIPNkugD0JMbg89TG4POkxuDzlNOw9ATgkPPE4JDztO1w9CT6UPP0+lDzRQcg87UUAPN1FADy9SDg87UtsPN1LbDzRTqQ87VHcPN1R3Dy9VRQ87VhIPN1YSDy1W4A85V64PNFeuDzBXrg8vWHsPO1lJDzZZSQ8zWUkPNFoXD0Ba5Q87WuUPN1rlDzZbsg9CXIAPPVyADzpcgA8AClJpZ2h0IEhhbmQACUxlZnQgSGFuZAAHU3RyaW5ncwAMUGlhbm8gRWNobyAxAAxQaWFubyBFY2hvIDI="
+    },
+    "battle_day": {
+      "musicianTitle": "Grasswalk",
+      "musicianSource": "https://bitmidi.com/plants-vs-zombies-grasswalk-mid",
+      "musicianAuthor": "Community arrangement (BitMidi)",
+      "musicianCode": "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",
+      "title": "汇帆市场·白天",
+      "subtitle": "Kul Tiran High Seas A",
+      "nativeFileId": 1781897,
+      "volumeSoundKitID": 120160,
+      "baseVolume": 1,
+      "channel": "SFX",
+      "path": "sound/music/battleforazeroth/mus_80_kultiran_highseas_a.mp3",
+      "source": "WoW 12.1.0 AreaTable 8718 (Tradewinds Market) / ZoneMusic 2070 day SoundKit 116005 / SoundKitEntry 339000 / wowdev/wow-listfile parts/sound.csv",
+      "mood": "伯拉勒斯·汇帆市场白天曲库中的 Kul Tiran High Seas A"
+    },
+    "battle_night": {
+      "musicianTitle": "Moongrains",
+      "musicianSource": "用户提供：Moongrains_Normal.mid",
+      "musicianAuthor": "用户提供，编曲者未核实",
+      "musicianCode": "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",
+      "title": "汇帆市场·夜晚",
+      "subtitle": "Kul Tiran Parley B",
+      "volumeSubtitle": "Parley B 等 · 曲库随机",
+      "nativeFileId": 2146621,
+      "volumeSoundKitID": 93661,
+      "baseVolume": 1,
+      "channel": "SFX",
+      "path": "sound/music/battleforazeroth/mus_80_kultiran_parley_b.mp3",
+      "source": "User audition N1 / WoW 12.1.0 SoundKitEntry 339004 (SoundKit 116006) / volume SoundKit 93661, entry 337271 / wowdev/wow-listfile parts/sound.csv",
+      "mood": "用户试听选定 N1 Kul Tiran Parley B；低于100%时接受对应音量曲库的随机曲目"
+    }
+  },
+  "endless": {
+    "level": 10,
+    "openingRows": [2, 3, 4],
+    "allRowsFromRound": 2,
+    "prepare": 15,
+    "roundGap": 8,
+    "spawnIntervalBase": 2.2,
+    "spawnIntervalStep": 0.06,
+    "spawnIntervalMin": 0.55,
+    "roundSunBase": 50,
+    "roundSunStep": 5,
+    "roundSunMax": 150,
+    "score": {
+      "basic": 10,
+      "flag": 20,
+      "cone": 25,
+      "bucket": 45,
+      "pole": 35,
+      "paper": 40,
+      "necromancer": 80,
+      "abomination": 150
+    }
+  },
+  "items": {},
+  "plants": [
+    {
+      "id": "pea",
+      "name": "翡翠鞭笞者",
+      "cost": 100,
+      "hp": 300,
+      "reload": 5,
+      "interval": 1.4,
+      "damage": 20,
+      "tip": "向前发射自然能量弹，守住一整条路。"
+    },
+    {
+      "id": "sunflower",
+      "name": "向日葵",
+      "cost": 50,
+      "hp": 300,
+      "reload": 5,
+      "interval": 22,
+      "tip": "每22秒凝聚25点阳光，优先部署在后排。"
+    },
+    {
+      "id": "cherry",
+      "name": "机械炸弹宝宝",
+      "cost": 150,
+      "hp": 300,
+      "reload": 35,
+      "tip": "1.2秒后爆炸，清除周围3×3区域。"
+    },
+    {
+      "id": "wall",
+      "name": "红玉树苗",
+      "cost": 50,
+      "hp": 4000,
+      "reload": 20,
+      "tip": "以4000生命筑起活木屏障，为后排争取时间。"
+    },
+    {
+      "id": "mine",
+      "name": "黑索微型地雷",
+      "cost": 25,
+      "hp": 300,
+      "reload": 20,
+      "tip": "埋下12秒后武装，接触即爆炸。"
+    },
+    {
+      "id": "snow",
+      "name": "寒霜精灵",
+      "cost": 175,
+      "hp": 300,
+      "reload": 5,
+      "interval": 1.6,
+      "damage": 20,
+      "tip": "寒霜弹令敌人减速50%，持续5秒。"
+    },
+    {
+      "id": "chomper",
+      "name": "邪恶南瓜娃娃",
+      "cost": 150,
+      "hp": 300,
+      "reload": 7.5,
+      "tip": "吞掉前方一格内的敌人，咀嚼20秒。"
+    },
+    {
+      "id": "repeater",
+      "name": "双生鞭笞者",
+      "cost": 200,
+      "hp": 300,
+      "reload": 5,
+      "interval": 1.4,
+      "damage": 20,
+      "tip": "连续发射两枚自然能量弹。"
+    },
+    {
+      "id": "puff",
+      "name": "赞加喷射孢子",
+      "cost": 0,
+      "hp": 300,
+      "reload": 5,
+      "interval": 1.4,
+      "damage": 20,
+      "tip": "免费，射程三格；白天会睡觉。"
+    },
+    {
+      "id": "sunshroom",
+      "name": "辉光孢子",
+      "cost": 25,
+      "hp": 300,
+      "reload": 5,
+      "interval": 22,
+      "tip": "夜间产15阳光，90秒长大后产25。"
+    }
+  ],
+  "enemies": {
+    "basic": {
+      "name": "食尸鬼",
+      "hp": 200,
+      "speed": 10,
+      "bite": 80,
+      "melee": {
+        "period": 0.8,
+        "impact": 0.32000000000000006,
+        "animation": 16,
+        "motionDuration": 1
+      }
+    },
+    "flag": {
+      "name": "天灾旗手",
+      "hp": 240,
+      "speed": 13,
+      "bite": 80,
+      "melee": {
+        "period": 0.8,
+        "impact": 0.32000000000000006,
+        "animation": 16,
+        "motionDuration": 1
+      }
+    },
+    "cone": {
+      "name": "披甲食尸鬼",
+      "hp": 560,
+      "speed": 10,
+      "bite": 80,
+      "melee": {
+        "period": 0.8,
+        "impact": 0.32000000000000006,
+        "animation": 16,
+        "motionDuration": 1
+      }
+    },
+    "bucket": {
+      "name": "腐化巨尸",
+      "hp": 1100,
+      "speed": 9,
+      "bite": 80,
+      "melee": {
+        "period": 1,
+        "impact": 0.4,
+        "animation": 16,
+        "motionDuration": 1
+      }
+    },
+    "pole": {
+      "name": "疾行恶鬼",
+      "hp": 340,
+      "speed": 19,
+      "bite": 80,
+      "melee": {
+        "period": 0.65,
+        "impact": 0.26,
+        "animation": 16,
+        "motionDuration": 1
+      }
+    },
+    "paper": {
+      "name": "狂暴侍僧",
+      "hp": 360,
+      "speed": 11,
+      "bite": 80,
+      "melee": {
+        "period": 0.8,
+        "impact": 0.32000000000000006,
+        "animation": 16,
+        "motionDuration": 1
+      }
+    },
+    "abomination": {
+      "name": "憎恶缝合怪",
+      "hp": 2200,
+      "speed": 8,
+      "bite": 125,
+      "ability": "vomit",
+      "firstCast": 9,
+      "castInterval": 14,
+      "vomitDuration": 3.2,
+      "vomitRange": 168,
+      "vomitDPS": 120,
+      "stunDuration": 4,
+      "melee": {
+        "period": 1,
+        "impact": 0.4,
+        "animation": 16,
+        "motionDuration": 1
+      }
+    },
+    "necromancer": {
+      "name": "天灾亡灵师",
+      "hp": 520,
+      "speed": 9,
+      "bite": 45,
+      "ability": "necromancer",
+      "firstShot": 1.2,
+      "shotInterval": 3.2,
+      "range": 330,
+      "shotSpeed": 230,
+      "shotDamage": 45,
+      "melee": {
+        "period": 0.8,
+        "impact": 0.32000000000000006,
+        "animation": 16,
+        "motionDuration": 1
+      }
+    }
+  },
+  "campaign": [
+    {
+      "title": "翡翠初醒",
+      "subtitle": "阳光落下，庭院苏醒。",
+      "rows": [
+        3
+      ],
+      "theme": "day",
+      "sun": 150,
+      "sky": 6,
+      "prepare": 15,
+      "waves": [
+        {
+          "types": [
+            [
+              "basic",
+              2
+            ]
+          ],
+          "interval": 8,
+          "gap": 8
+        },
+        {
+          "types": [
+            [
+              "basic",
+              3
+            ]
+          ],
+          "interval": 7,
+          "gap": 10
+        },
+        {
+          "types": [
+            [
+              "flag",
+              1
+            ],
+            [
+              "basic",
+              3
+            ]
+          ],
+          "interval": 6,
+          "gap": 10
+        }
+      ]
+    },
+    {
+      "title": "日光守望",
+      "subtitle": "用向日葵经营你的后排。",
+      "rows": [
+        2,
+        3,
+        4
+      ],
+      "theme": "day",
+      "sun": 200,
+      "sky": 6,
+      "prepare": 25,
+      "waves": [
+        {
+          "types": [
+            [
+              "basic",
+              4
+            ]
+          ],
+          "interval": 7,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "basic",
+              6
+            ]
+          ],
+          "interval": 6,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "flag",
+              1
+            ],
+            [
+              "basic",
+              7
+            ]
+          ],
+          "interval": 5,
+          "gap": 10
+        }
+      ]
+    },
+    {
+      "title": "机械警报",
+      "subtitle": "路障入场；把爆炸留给拥挤处。",
+      "rows": [
+        2,
+        3,
+        4
+      ],
+      "theme": "day",
+      "sun": 200,
+      "sky": 7,
+      "prepare": 26,
+      "waves": [
+        {
+          "types": [
+            [
+              "basic",
+              4
+            ]
+          ],
+          "interval": 6,
+          "gap": 10
+        },
+        {
+          "types": [
+            [
+              "basic",
+              3
+            ],
+            [
+              "cone",
+              2
+            ]
+          ],
+          "interval": 6,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "cone",
+              3
+            ],
+            [
+              "basic",
+              4
+            ]
+          ],
+          "interval": 5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "flag",
+              1
+            ],
+            [
+              "cone",
+              3
+            ],
+            [
+              "basic",
+              5
+            ]
+          ],
+          "interval": 4,
+          "gap": 10
+        }
+      ]
+    },
+    {
+      "title": "红玉防线",
+      "subtitle": "五条路全部开放。",
+      "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "theme": "day",
+      "sun": 250,
+      "sky": 6,
+      "prepare": 32,
+      "waves": [
+        {
+          "types": [
+            [
+              "basic",
+              5
+            ]
+          ],
+          "interval": 6,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "basic",
+              5
+            ],
+            [
+              "cone",
+              3
+            ]
+          ],
+          "interval": 5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "cone",
+              4
+            ],
+            [
+              "basic",
+              6
+            ]
+          ],
+          "interval": 4,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "flag",
+              1
+            ],
+            [
+              "cone",
+              5
+            ],
+            [
+              "basic",
+              8
+            ]
+          ],
+          "interval": 3.5,
+          "gap": 10
+        }
+      ]
+    },
+    {
+      "title": "缝合怪来袭",
+      "subtitle": "新敌人：憎恶缝合怪。躲过毒雾，在僵直时反击。",
+      "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "theme": "day",
+      "sun": 250,
+      "sky": 7,
+      "prepare": 32,
+      "waves": [
+        {
+          "types": [
+            [
+              "basic",
+              5
+            ],
+            [
+              "cone",
+              2
+            ]
+          ],
+          "interval": 5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "cone",
+              4
+            ],
+            [
+              "bucket",
+              1
+            ]
+          ],
+          "interval": 5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "basic",
+              6
+            ],
+            [
+              "bucket",
+              3
+            ]
+          ],
+          "interval": 4,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "flag",
+              1
+            ],
+            [
+              "cone",
+              5
+            ],
+            [
+              "bucket",
+              4
+            ],
+            [
+              "abomination",
+              1
+            ]
+          ],
+          "interval": 4,
+          "gap": 10
+        }
+      ]
+    },
+    {
+      "title": "冰霜与邪术",
+      "subtitle": "新敌人：天灾亡灵师。用减速与前排抵御远程暗影弹。",
+      "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "theme": "day",
+      "sun": 275,
+      "sky": 7,
+      "prepare": 35,
+      "waves": [
+        {
+          "types": [
+            [
+              "basic",
+              6
+            ]
+          ],
+          "interval": 5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "pole",
+              3
+            ],
+            [
+              "cone",
+              3
+            ],
+            [
+              "necromancer",
+              1
+            ]
+          ],
+          "interval": 5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "cone",
+              5
+            ],
+            [
+              "bucket",
+              2
+            ]
+          ],
+          "interval": 4,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "pole",
+              5
+            ],
+            [
+              "basic",
+              5
+            ]
+          ],
+          "interval": 4,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "flag",
+              1
+            ],
+            [
+              "bucket",
+              4
+            ],
+            [
+              "pole",
+              5
+            ],
+            [
+              "necromancer",
+              2
+            ]
+          ],
+          "interval": 3.5,
+          "gap": 10
+        }
+      ]
+    },
+    {
+      "title": "南瓜盛宴",
+      "subtitle": "邪恶南瓜娃娃吞下铁桶也不费力。",
+      "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "theme": "day",
+      "sun": 275,
+      "sky": 7,
+      "prepare": 35,
+      "waves": [
+        {
+          "types": [
+            [
+              "basic",
+              6
+            ],
+            [
+              "paper",
+              2
+            ]
+          ],
+          "interval": 5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "bucket",
+              3
+            ],
+            [
+              "cone",
+              3
+            ],
+            [
+              "necromancer",
+              1
+            ]
+          ],
+          "interval": 5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "paper",
+              5
+            ],
+            [
+              "pole",
+              3
+            ],
+            [
+              "abomination",
+              1
+            ]
+          ],
+          "interval": 4,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "bucket",
+              4
+            ],
+            [
+              "basic",
+              7
+            ]
+          ],
+          "interval": 4,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "flag",
+              1
+            ],
+            [
+              "paper",
+              4
+            ],
+            [
+              "bucket",
+              4
+            ],
+            [
+              "pole",
+              3
+            ],
+            [
+              "necromancer",
+              2
+            ]
+          ],
+          "interval": 3.5,
+          "gap": 10
+        }
+      ]
+    },
+    {
+      "title": "双生火力",
+      "subtitle": "黄昏前最后一场草坪保卫战。",
+      "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "theme": "day",
+      "sun": 300,
+      "sky": 7,
+      "prepare": 35,
+      "waves": [
+        {
+          "types": [
+            [
+              "cone",
+              5
+            ],
+            [
+              "basic",
+              4
+            ]
+          ],
+          "interval": 5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "pole",
+              4
+            ],
+            [
+              "paper",
+              4
+            ],
+            [
+              "necromancer",
+              2
+            ]
+          ],
+          "interval": 4,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "bucket",
+              5
+            ],
+            [
+              "cone",
+              4
+            ]
+          ],
+          "interval": 4,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "paper",
+              5
+            ],
+            [
+              "pole",
+              5
+            ],
+            [
+              "basic",
+              5
+            ],
+            [
+              "abomination",
+              1
+            ]
+          ],
+          "interval": 3.5,
+          "gap": 12
+        },
+        {
+          "types": [
+            [
+              "flag",
+              1
+            ],
+            [
+              "bucket",
+              6
+            ],
+            [
+              "cone",
+              5
+            ],
+            [
+              "pole",
+              5
+            ],
+            [
+              "abomination",
+              1
+            ],
+            [
+              "necromancer",
+              2
+            ]
+          ],
+          "interval": 3,
+          "gap": 10
+        }
+      ]
+    },
+    {
+      "title": "赞加守夜",
+      "subtitle": "没有天降阳光，赞加喷射孢子免费守线。",
+      "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "theme": "night",
+      "sun": 225,
+      "sky": 0,
+      "prepare": 40,
+      "waves": [
+        {
+          "types": [
+            [
+              "basic",
+              5
+            ]
+          ],
+          "interval": 7,
+          "gap": 15
+        },
+        {
+          "types": [
+            [
+              "basic",
+              5
+            ],
+            [
+              "cone",
+              3
+            ]
+          ],
+          "interval": 5,
+          "gap": 15
+        },
+        {
+          "types": [
+            [
+              "paper",
+              4
+            ],
+            [
+              "basic",
+              6
+            ],
+            [
+              "necromancer",
+              1
+            ]
+          ],
+          "interval": 4,
+          "gap": 15
+        },
+        {
+          "types": [
+            [
+              "pole",
+              4
+            ],
+            [
+              "bucket",
+              3
+            ]
+          ],
+          "interval": 4,
+          "gap": 15
+        },
+        {
+          "types": [
+            [
+              "flag",
+              1
+            ],
+            [
+              "cone",
+              5
+            ],
+            [
+              "paper",
+              4
+            ],
+            [
+              "bucket",
+              3
+            ],
+            [
+              "abomination",
+              1
+            ],
+            [
+              "necromancer",
+              2
+            ]
+          ],
+          "interval": 3.5,
+          "gap": 10
+        }
+      ]
+    },
+    {
+      "title": "辉光黎明",
+      "subtitle": "让辉光孢子长大，迎接六波总攻。",
+      "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "theme": "night",
+      "sun": 250,
+      "sky": 0,
+      "prepare": 40,
+      "waves": [
+        {
+          "types": [
+            [
+              "basic",
+              6
+            ]
+          ],
+          "interval": 6,
+          "gap": 15
+        },
+        {
+          "types": [
+            [
+              "cone",
+              4
+            ],
+            [
+              "paper",
+              3
+            ],
+            [
+              "necromancer",
+              1
+            ]
+          ],
+          "interval": 5,
+          "gap": 15
+        },
+        {
+          "types": [
+            [
+              "pole",
+              5
+            ],
+            [
+              "basic",
+              5
+            ]
+          ],
+          "interval": 4,
+          "gap": 15
+        },
+        {
+          "types": [
+            [
+              "bucket",
+              5
+            ],
+            [
+              "paper",
+              4
+            ],
+            [
+              "abomination",
+              1
+            ]
+          ],
+          "interval": 4,
+          "gap": 15
+        },
+        {
+          "types": [
+            [
+              "cone",
+              6
+            ],
+            [
+              "pole",
+              5
+            ],
+            [
+              "paper",
+              4
+            ],
+            [
+              "necromancer",
+              2
+            ]
+          ],
+          "interval": 3.5,
+          "gap": 15
+        },
+        {
+          "types": [
+            [
+              "flag",
+              2
+            ],
+            [
+              "bucket",
+              7
+            ],
+            [
+              "pole",
+              5
+            ],
+            [
+              "paper",
+              5
+            ],
+            [
+              "cone",
+              5
+            ],
+            [
+              "abomination",
+              2
+            ],
+            [
+              "necromancer",
+              3
+            ]
+          ],
+          "interval": 3,
+          "gap": 10
+        }
+      ]
+    }
+  ],
+  "visuals": {
+    "plants": {
+      "pea": {
+        "model": "pea",
+        "texture": "pet_pea"
+      },
+      "sunflower": {
+        "model": "sunflower",
+        "texture": "pet_sunflower"
+      },
+      "cherry": {
+        "model": "cherry",
+        "texture": "pet_cherry"
+      },
+      "wall": {
+        "model": "wall",
+        "texture": "pet_wall"
+      },
+      "mine": {
+        "model": "mine",
+        "texture": "pet_mine"
+      },
+      "snow": {
+        "model": "snow",
+        "texture": "pet_snow"
+      },
+      "chomper": {
+        "model": "chomper",
+        "texture": "pet_chomper"
+      },
+      "repeater": {
+        "model": "repeater",
+        "texture": "pet_repeater"
+      },
+      "puff": {
+        "model": "puff",
+        "texture": "pet_puff"
+      },
+      "sunshroom": {
+        "model": "sunshroom",
+        "texture": "pet_sunshroom"
+      }
+    },
+    "enemies": {
+      "basic": {
+        "model": "zombie",
+        "texture": "icon_basic",
+        "badge": "icon_basic"
+      },
+      "flag": {
+        "model": "zombie",
+        "texture": "icon_basic",
+        "badge": "icon_flag"
+      },
+      "cone": {
+        "model": "zombie",
+        "texture": "icon_basic",
+        "badge": "icon_cone"
+      },
+      "bucket": {
+        "model": "bucket_zombie",
+        "texture": "icon_basic",
+        "badge": "icon_bucket"
+      },
+      "pole": {
+        "model": "pole_zombie",
+        "texture": "icon_basic",
+        "badge": "icon_pole"
+      },
+      "paper": {
+        "model": "paper_zombie",
+        "texture": "icon_basic",
+        "badge": "icon_paper"
+      },
+      "abomination": {
+        "model": "abomination",
+        "texture": "pet_abomination",
+        "badge": "pet_abomination"
+      },
+      "necromancer": {
+        "model": "necromancer",
+        "texture": "pet_necromancer",
+        "badge": "pet_necromancer"
+      }
+    },
+    "tools": {
+      "shovel": {
+        "texture": "icon_shovel"
+      },
+      "mower": {
+        "model": "mower",
+        "texture": "pet_mower"
+      },
+      "sun": {
+        "texture": "sun_disc"
+      },
+      "seed": {
+        "texture": "icon_farm_seed"
+      }
+    },
+    "materials": {
+      "grass": {
+        "texture": "ground_elwynn_grass"
+      },
+      "dirt": {
+        "texture": "ground_dirt"
+      },
+      "road": {
+        "texture": "ground_elwynn_road"
+      },
+      "wood": {
+        "texture": "ground_elwynn_wood"
+      },
+      "leather": {
+        "texture": "ui_leather_background"
+      }
+    }
+  },
+  "effects": {
+    "spore_flash": {
+      "texture":"orb","mode":"burst","count":1,"space":"screen","layer":8,"blend":"ADD","priority":2,
+      "lifetime":0.1,"startSize":19,"endSize":4,"startColor":[0.8,0.4,1,1],"endAlpha":0
+    },
+    "spore_dust": {
+      "texture":"fx_soft","mode":"burst","count":7,"space":"screen","layer":8,"blend":"BLEND","priority":1,"maxAlive":56,
+      "lifetime":[0.2,0.38],"speed":[35,85],"directionDeg":[0,360],"gravity":-30,"drag":3,
+      "startSize":[3,6],"endSize":1,"startAlpha":0.85,"endAlpha":0,
+      "startColor":[0.7,0.24,0.95,1],"endColor":[0.42,0.13,0.62,0.6]
+    },
+    "spore_wisp": {
+      "texture":"fx_soft","mode":"burst","count":2,"space":"screen","layer":7,"blend":"BLEND","priority":0,"maxAlive":12,
+      "delay":[0.02,0.05],"fadeIn":0.06,"lifetime":[0.24,0.4],"speed":[12,24],"directionDeg":[60,120],"drag":2,
+      "startSize":[4,7],"endSize":12,"aspectRatio":1.6,"startAlpha":0.16,"endAlpha":0,
+      "startRotationDeg":[-35,35],"spinDeg":[-70,70],"startColor":[0.65,0.3,0.8,1]
+    },
+    "pea_flash": {
+      "texture":"orb","mode":"burst","count":1,"space":"screen","layer":8,"blend":"ADD","priority":2,
+      "lifetime":0.12,"startSize":28,"endSize":5,"startColor":[0.7,1,0.2,1],"endAlpha":0
+    },
+    "pea_splash": {
+      "texture":"fx_soft","mode":"burst","count":7,"space":"screen","layer":8,"blend":"BLEND","priority":1,"maxAlive":70,
+      "lifetime":[0.2,0.38],"speed":[48,125],"directionDeg":[0,360],"gravity":230,"drag":1.4,
+      "startSize":[5,10],"endSize":2,"startColor":[0.35,0.85,0.06,1],"endColor":[0.16,0.46,0.02,0.5],"endAlpha":0
+    },
+    "ice_flash": {
+      "texture":"fx_crystal","shape":"crystal","mode":"burst","count":3,"space":"screen","layer":8,"blend":"ADD","priority":2,
+      "lifetime":0.11,"startSize":28,"endSize":3,"aspectRatio":0.13,"startRotationDeg":[0,180],"startColor":[0.85,0.97,1,1],"endAlpha":0
+    },
+    "ice_shards": {
+      "texture":"fx_crystal","shape":"crystal","mode":"burst","count":9,"space":"screen","layer":8,"blend":"BLEND","priority":1,"maxAlive":81,
+      "lifetime":[0.28,0.5],"speed":[170,300],"directionDeg":[0,360],"gravity":130,"drag":4,
+      "startSize":[19,31],"endSize":5,"aspectRatio":0.3,"startColor":[0.15,0.62,1,1],"endColor":[0.12,0.4,0.8,0.65],
+      "alignToVelocity":true,"startRotationDeg":[-12,12],"spinDeg":[-160,160],"endAlpha":0
+    },
+    "ice_chips": {
+      "texture":"fx_crystal","shape":"crystal","mode":"burst","count":4,"space":"screen","layer":8,"blend":"ADD","priority":0,
+      "lifetime":[0.16,0.3],"speed":[230,360],"directionDeg":[0,360],"gravity":65,"drag":2,
+      "startSize":[7,12],"endSize":1,"aspectRatio":0.4,"alignToVelocity":true,"spinDeg":[-300,300],"endAlpha":0,"startColor":[0.6,0.9,1,1]
+    },
+    "explosion_flash": {
+      "texture":"orb","mode":"burst","count":1,"space":"screen","layer":8,"blend":"ADD","priority":3,
+      "lifetime":0.18,"startSize":100,"endSize":32,"startColor":[1,0.78,0.28,1],"endAlpha":0
+    },
+    "explosion_ring": {
+      "texture":"fx_ring","mode":"burst","count":1,"space":"screen","layer":8,"blend":"ADD","priority":3,
+      "lifetime":0.38,"startSize":28,"endSize":170,"startAlpha":0.8,"endAlpha":0,"startColor":[1,0.46,0.08,1]
+    },
+    "explosion_smoke": {
+      "texture":"fx_soft","mode":"burst","count":7,"space":"screen","layer":7,"blend":"BLEND","priority":0,
+      "delay":[0.06,0.18],"fadeIn":0.12,"lifetime":[0.55,0.95],"speed":[20,62],"directionDeg":[45,135],"drag":0.5,
+      "offsetX":[-24,24],"offsetY":[-10,10],"startSize":[30,48],"endSize":85,
+      "startAlpha":0.6,"endAlpha":0,"startColor":[0.2,0.18,0.13,1],"endColor":[0.12,0.13,0.1,0.4]
+    },
+    "explosion_sparks": {
+      "texture": "orb", "mode": "burst", "count": 28, "space": "screen", "layer": 8, "blend": "ADD", "priority": 2,
+      "lifetime": [0.22, 0.62], "speed": [100, 320], "directionDeg": [0, 360], "gravity": 280, "drag": 0.5,
+      "offsetX": [-8, 8], "offsetY": [-8, 8], "startSize": [8, 22], "endSize": 1,
+      "startAlpha": [0.7, 1], "endAlpha": 0, "startColor": [1, 0.58, 0.12, 1], "endColor": [0.8, 0.14, 0.03, 0.2],
+      "startRotationDeg": [0, 360], "spinDeg": [-720, 720]
+    },
+    "sun_collect": {
+      "texture": "orb", "mode": "burst", "count": 18, "space": "screen", "layer": 10, "blend": "ADD", "priority": 1,
+      "lifetime": [0.28, 0.55], "speed": [55, 145], "directionDeg": 90, "spreadDeg": 80, "gravity": 70, "drag": 0.8,
+      "offsetX": [-6, 6], "offsetY": [-5, 5], "startSize": [5, 12], "endSize": 1,
+      "startAlpha": [0.65, 1], "endAlpha": 0, "startColor": [1, 0.86, 0.25, 1], "endColor": [1, 0.45, 0.08, 0.15],
+      "startRotationDeg": [0, 360], "spinDeg": [-540, 540]
+    }
+  },
+  "hideHostFooter": true,
+  "surfaceModelScene": true,
+  "soundBuses": {"impact": 0.5},
+  "soundGroups": {
+    "impact_nature": {
+      "interval": 0.06,
+      "maxConcurrent": 2,
+      "window": 1,
+      "densityStep": 0,
+      "maxExtra": 0
+    },
+    "impact_frost": {
+      "interval": 0.08,
+      "maxConcurrent": 2,
+      "window": 1,
+      "densityStep": 0,
+      "maxExtra": 0
+    },
+    "impact_spore": {
+      "interval": 0.08,
+      "maxConcurrent": 2,
+      "window": 1,
+      "densityStep": 0,
+      "maxExtra": 0
+    },
+    "impact_shadow": {
+      "interval": 0.12,
+      "maxConcurrent": 1,
+      "window": 1,
+      "densityStep": 0,
+      "maxExtra": 0
+    },
+    "melee": {
+      "interval": 0.22,
+      "window": 1,
+      "densityStep": 0.008,
+      "maxExtra": 0.15,
+      "maxConcurrent": 2
+    },
+    "cast": {
+      "interval": 0.3,
+      "maxConcurrent": 1,
+      "window": 1,
+      "densityStep": 0,
+      "maxExtra": 0
+    },
+    "elite": {
+      "interval": 0.8,
+      "maxConcurrent": 1,
+      "window": 1,
+      "densityStep": 0,
+      "maxExtra": 0
+    },
+    "special": {
+      "interval": 0,
+      "maxConcurrent": 3,
+      "window": 1,
+      "densityStep": 0,
+      "maxExtra": 0
+    }
+  }
+}

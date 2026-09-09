@@ -1,0 +1,10 @@
+{
+  "name": "azeroth-garden-defense",
+  "private": true,
+  "version": "0.1.1",
+  "scripts": {
+    "build": "node ../../tools/build-item-game.mjs item.json",
+    "verify:package": "node ../../tools/build-item-game.mjs item.json --verify-only",
+    "test": "python tests/test_game.py"
+  }
+}

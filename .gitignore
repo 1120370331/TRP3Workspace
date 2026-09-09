@@ -11,3 +11,12 @@ Thumbs.db
 
 # Local document-review output
 _docx_review/
+
+# Local verification runtimes and generated diagnostic evidence
+.local-tools/
+__pycache__/
+.test-output/
+node_modules/
+.search-index/
+.serena/
+temp/

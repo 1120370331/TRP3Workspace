@@ -1,0 +1,47 @@
+{
+  "simulationHz": 60,
+  "viewport": { "width": 960, "height": 400 },
+  "limits": { "maxEntities": 1200, "maxParticles": 256, "maxEmitters": 16, "maxParticleSpawnsPerStep": 32 },
+  "benchmark": { "warmup": 2, "duration": 10 },
+  "controls": { "left": ["A", "LEFT"], "right": ["D", "RIGHT"], "jump": ["SPACE"], "attack": ["J"], "fire": ["K"] },
+  "prefabs": {
+    "sprite": { "width": 12, "height": 12, "motion": "static", "visual": { "kind": "rect", "color": [0.25, 0.72, 0.96, 1] } },
+    "moving": { "width": 12, "height": 12, "motion": "kinematic", "vx": 90, "vy": 35, "wrap": true, "visual": { "kind": "rect", "color": [0.32, 0.86, 0.65, 0.85] } },
+    "model": { "width": 24, "height": 32, "motion": "kinematic", "vx": 20, "wrap": true, "visual": { "kind": "model", "asset": "fish_probe", "width": 72, "height": 72 } },
+    "scene_model": { "width": 24, "height": 32, "motion": "kinematic", "vx": 20, "wrap": true, "visual": { "kind": "scene_model", "asset": "fish_probe", "width": 72, "height": 72 } },
+    "hero": { "width": 24, "height": 40, "health": 1000000, "motion": "dynamic", "role": "player", "faction": "player", "speed": 220, "jumpSpeed": 370, "actions": ["slash", "shoot"], "visual": { "kind": "rect", "color": [0.23, 0.66, 1, 1] } },
+    "hero_play": { "width": 24, "height": 40, "health": 250, "motion": "dynamic", "role": "player", "faction": "player", "speed": 220, "jumpSpeed": 370, "actions": ["slash", "shoot"], "visual": { "kind": "rect", "color": [0.23, 0.66, 1, 1] } },
+    "enemy_play": { "width": 22, "height": 32, "health": 40, "motion": "dynamic", "faction": "enemy", "speed": 60, "ai": { "action": "slash", "range": 48, "interval": 0.2 }, "visual": { "kind": "rect", "color": [0.97, 0.45, 0.27, 1] } },
+    "enemy": { "width": 22, "height": 32, "health": 1000000, "motion": "dynamic", "faction": "enemy", "speed": 60, "ai": { "action": "slash", "range": 48, "interval": 0.2 }, "visual": { "kind": "rect", "color": [0.97, 0.45, 0.27, 1] } },
+    "target": { "width": 12, "height": 22, "health": 100000000, "motion": "static", "faction": "enemy", "visual": { "kind": "rect", "color": [0.85, 0.3, 0.4, 0.8] } },
+    "bullet": { "width": 7, "height": 7, "motion": "kinematic", "projectile": true, "faction": "player", "vx": 550, "damage": 1, "ttl": 2.5, "visual": { "kind": "rect", "color": [1, 0.84, 0.25, 1] } }
+  },
+  "actions": {
+    "slash": { "windup": 0.1, "active": 0.12, "recovery": 0.22, "width": 50, "height": 34, "damage": 12 },
+    "shoot": { "windup": 0.06, "active": 0.04, "recovery": 0.16, "projectile": "bullet", "projectileSpeed": 640, "damage": 5 }
+  },
+  "levels": {
+    "arena_01": { "terrain": [{ "x": 0, "y": 0, "w": 960, "h": 20 }, { "x": -20, "y": 20, "w": 20, "h": 380 }, { "x": 960, "y": 20, "w": 20, "h": 380 }] }
+  },
+  "assets": {
+    "models": { "fish_probe": { "kind": "creatureDisplayID", "id": 73692, "scale": 1, "facing": 0, "referenceOnly": true, "source": "repository abyss-aquarium reference; validate on target client" } },
+    "textures": { "particle_probe": { "kind": "texturePath", "path": "Interface\\Cooldown\\star4" } }
+  },
+  "effects": {
+    "perf_particles": {
+      "texture": "particle_probe", "mode": "continuous", "space": "screen", "layer": 5, "blend": "ADD",
+      "rate": 128, "lifetime": 1, "maxAlive": 256, "speed": [25, 110], "directionDeg": [0, 360],
+      "gravity": 15, "drag": 0.4, "offsetX": [-8, 8], "offsetY": [-8, 8],
+      "startSize": [5, 14], "endSize": 1, "startAlpha": [0.55, 1], "endAlpha": 0,
+      "startColor": [0.35, 0.72, 1, 1], "endColor": [0.65, 0.25, 1, 0.2],
+      "startRotationDeg": [0, 360], "spinDeg": [-360, 360]
+    }
+  },
+  "sounds": { "combat_hit": { "kind": "soundKitID", "id": 80, "channel": "SFX", "cooldown": 0.12, "maxDuration": 2 } },
+  "feedback": { "combat.hit": "combat_hit" },
+  "music": { "arena": { "nativeFileId": 1061171, "source": "repository abyss-aquarium reference; validate on target client" } },
+  "items": {
+    "token": { "innerId": "mat_token", "name": "IG 测试材料", "stack": 200 },
+    "blade": { "innerId": "gear_blade", "name": "IG 测试装备", "icon": "inv_sword_04", "attributes": { "attackBonus": 2, "durability": 100 } }
+  }
+}

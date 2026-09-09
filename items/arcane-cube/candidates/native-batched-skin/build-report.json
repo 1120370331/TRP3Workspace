@@ -1,0 +1,210 @@
+{
+  "format": "TRP3 Extended short export",
+  "candidateStatus": "requires-in-game-verification",
+  "rootId": "0908ArcCube001",
+  "publisher": "斯提芬丶九二-金色平原",
+  "createdAt": "08/09/26 12:00:00",
+  "objectVersion": 6,
+  "releaseVersion": "0.4.2-test",
+  "target": {
+    "extendedBuild": 1061,
+    "extendedDisplayVersion": "2.3.5",
+    "note": "目标沿用已核对的 TRP3E 1061；当前 3D 适配器需客户端验收。"
+  },
+  "sourceHash": "d4f51898b7142da22ad840737140429051a5b88449897f6214c4a89639aeb83d",
+  "effectiveHash": "961ebcb7b43bde4afa4dca58d7912aa76e64ab21ef0272d8ae66510de92617c2",
+  "generatorHash": "8cc91df86904f2c1a1dbea66702ed64af95104913079eebb7d9c49cc30790c5a",
+  "objectHash": "b686f99b851e3f6aeb444d5d12867ac167a5d982f4738b74465c3dbb0b8fb7ea",
+  "exportHash": "8daec36b715ce06d198230eb912d73ceedfd2168149f91a82d73a4c32732134f",
+  "engine": {
+    "path": "../../framework/item-game",
+    "apiVersion": 1,
+    "version": "0.4.3"
+  },
+  "packages": {
+    "version": "0.4.3",
+    "explicit": true,
+    "requested": [
+      "particles3d",
+      "pixel-materials",
+      "surface"
+    ],
+    "resolved": [
+      "particles3d",
+      "pixel-materials",
+      "runtime",
+      "scene3d",
+      "surface"
+    ],
+    "automatic": [
+      "runtime",
+      "scene3d"
+    ],
+    "modules": [
+      "core",
+      "math3d",
+      "particles3d",
+      "pixel-materials",
+      "scene3d",
+      "view3d",
+      "telemetry",
+      "host",
+      "surface",
+      "view",
+      "input",
+      "runtime"
+    ],
+    "dependencies": {
+      "particles3d": [
+        "scene3d"
+      ],
+      "pixel-materials": [
+        "scene3d"
+      ],
+      "runtime": [],
+      "scene3d": [
+        "runtime"
+      ],
+      "surface": [
+        "runtime"
+      ]
+    }
+  },
+  "build": {
+    "profile": "development",
+    "budgets": {
+      "sourceBytes": 300000,
+      "exportCharacters": 120000
+    },
+    "logs": {
+      "persist": "auto",
+      "maxBytes": 190000
+    }
+  },
+  "packageLockHash": "35ff3f1d506348a5fcbeca4868d18e3451ccaae42494150ec14d15ac14a5aca8",
+  "toolchain": {
+    "node": "24.13.0",
+    "zlib": "1.3.1-470d3a2",
+    "luaparse": "0.3.1"
+  },
+  "sourceFiles": {
+    "core": "ceb243f69b5a24bf3672fd7e575d0ff936af49965bde30c4c7d13d7ac7271765",
+    "math3d": "f31d1c18b48a0d209e69c7214e8ee8b7b5853e725931d22e31bfbe5390efb095",
+    "particles3d": "ad0e7930f59977305645cd145a202cdee96a4fd2a83e0d71512af2b901c17394",
+    "pixel-materials": "dd069add7d3b5b208f399b54dcab894f6aabca3cdbe517db7933326e28ca1f50",
+    "scene3d": "ae2b4fa57851a1448f9fcddb31456c44333d934b91b114f7d9e2cc074819396d",
+    "view3d": "8a7462c58cace76e021ebbf810e66cd82e28ccc1fd201b1da91bf8e95e04344c",
+    "telemetry": "2a5cf92ada07ae965ef72419f980b6e36534d8901e506a11489affdf1b25505e",
+    "host": "46158e360bfcc45d848068654ce9d8da3e1d11b1ee3cb63508751f683ebad7a8",
+    "surface": "7943c1010b0f73ebc4d4d34d655e7de962a88e78abddd1a7cf3e02889455a85a",
+    "view": "c8ae093139db9b70be65f3742b3106512c1f941606043e8f99e9578f91a2cb61",
+    "input": "e7bff2b7bc6ea340b118006f36263ba72d749e7c19a09d19f859d69ce814b18e",
+    "runtime": "612d8b2aca1894f133e1afedf17664eb39dae45ef76bdd64b914e4f6ae6f14ac"
+  },
+  "gameModules": {
+    "fireworks": {
+      "path": "src/fireworks.lua",
+      "hash": "5ded31785b47757100e3356df5190774ed1a1f16fba00704c17bcf6083fb0910"
+    },
+    "geometry": {
+      "path": "src/geometry.lua",
+      "hash": "144457fbdc5d4a1120bd6d02f392341d8d56a8e31c1cc79c664aa2b0adfaf554"
+    },
+    "materials": {
+      "path": "src/materials.lua",
+      "hash": "10a53e45128bf4612160a95debc4c76b3b33939d3449d9219c2418be623ffea6"
+    },
+    "pixel_art": {
+      "path": "src/pixel-art.lua",
+      "hash": "09add2d93b75e9a8b5d48a818682b5d99f8dc9e8c6973b07799a412e6b181c55"
+    },
+    "puzzle": {
+      "path": "src/puzzle.lua",
+      "hash": "3068e894058d478af0fb8f917fae22225912edbdb0c5fdd447e0a4b367731dae"
+    },
+    "ui": {
+      "path": "src/ui.lua",
+      "hash": "0ce16aa560f7e8cf85427c350fafad0914117f316f440a5233682c61eff7808a"
+    }
+  },
+  "sizes": {
+    "sourceBytes": 238647,
+    "exportCharacters": 93783,
+    "macroCharacters": 252,
+    "macroBytes": 252,
+    "macroLimit": 255,
+    "unminifiedSourceBytes": 238647,
+    "engineSourceBytes": 186511
+  },
+  "sizeBreakdown": {
+    "engine": {
+      "core": 10087,
+      "math3d": 5208,
+      "particles3d": 13583,
+      "pixel-materials": 9268,
+      "scene3d": 22816,
+      "view3d": 13824,
+      "telemetry": 7843,
+      "host": 13981,
+      "surface": 34795,
+      "view": 22337,
+      "input": 4886,
+      "runtime": 27883
+    },
+    "game": {
+      "fireworks": 6581,
+      "geometry": 2770,
+      "materials": 6244,
+      "pixel_art": 2423,
+      "puzzle": 4176,
+      "ui": 10092,
+      "entry": 17515
+    },
+    "documents": {
+      "ig_help": 2220,
+      "ig_manifest": 265,
+      "ig_game": 2065,
+      "ig_assets": 27,
+      "ig_levels": 2,
+      "ig_music": 2
+    }
+  },
+  "bootstrap": {
+    "workflowOrder": [
+      "secure_macro",
+      "delay",
+      "script"
+    ],
+    "delaySeconds": 0.1,
+    "injectionTimeoutSeconds": 2
+  },
+  "checks": {
+    "typedRoundTrip": true,
+    "sourceByteEquality": true,
+    "canonicalLuaLineEndings": true,
+    "structuralValidation": true,
+    "securityScan": true,
+    "lua51Syntax": true,
+    "packageDependencies": true,
+    "sizeBudgets": true,
+    "minifiedASTEquality": false,
+    "frozenLockfile": false
+  },
+  "security": {
+    "level": 1,
+    "details": {
+      "SEC_REASON_MACRO": [
+        "0908ArcCube001"
+      ],
+      "SEC_REASON_SCRIPT": [
+        "0908ArcCube001",
+        "0908ArcCube001",
+        "0908ArcCube001",
+        "0908ArcCube001",
+        "0908ArcCube001",
+        "0908ArcCube001"
+      ]
+    }
+  },
+  "inGameVerified": false
+}
